@@ -56,7 +56,7 @@ ul {
     >li {
       >a {
         color: var(--white);
-        font-weight: 600;
+        font-weight: 500;
         opacity: 0.6;
         padding: 6px 10px !important;
 
@@ -80,11 +80,22 @@ ul {
       }
 
       .dropdown-menu {
-        top: calc(100% + 7px);
+        top: calc(100% + 0px);
         padding: 0;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
         overflow: hidden;
+        li{
+          a{
+            color: var(--primary);
+            padding: 8px 10px;
+            border-left: 3px solid transparent;
+            transition: border 0.3s ease-in-out;
+            &:hover{
+              border-left-color:var(--primary) ;
+            }
+          }
+        }
       }
     }
   }
