@@ -22,8 +22,8 @@ var swiper = new Swiper(".myBannerSwiper", {
       spaceBetween: 10,
     },
     1024: {
-      slidesPerView: 3,
-      spaceBetween: 10,
+      slidesPerView: 2,
+      spaceBetween: 50,
     },
   },
 });
@@ -49,7 +49,7 @@ var swiper = new Swiper(".topCategoriesSwiper", {
       spaceBetween: 10,
     },
     1024: {
-      slidesPerView: 6,
+      slidesPerView: 5,
       spaceBetween: 15,
     },
   },
