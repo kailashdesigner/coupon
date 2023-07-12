@@ -23,7 +23,7 @@ var swiper = new Swiper(".myBannerSwiper", {
     },
     1024: {
       slidesPerView: 2,
-      spaceBetween: 50,
+      spaceBetween: 10,
     },
   },
 });

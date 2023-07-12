@@ -23,7 +23,6 @@
   </head>
   <body>
     <!-- navbar -->
-
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <button
@@ -37,7 +36,9 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="index.html"> Coupon </a>
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/img/logo.png" alt="logo" />
+        </a>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
@@ -53,7 +54,7 @@
               >
                 Travel <i class="fa-solid fa-chevron-down"></i>
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu dropdown-menu-end">
                 <li><a class="dropdown-item" href="#">Makemytrip</a></li>
                 <li><a class="dropdown-item" href="#">Cleartrip</a></li>
                 <li><a class="dropdown-item" href="#">Agoda</a></li>
@@ -73,7 +74,7 @@
               >
                 Food <i class="fa-solid fa-chevron-down"></i>
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu dropdown-menu-end">
                 <li><a class="dropdown-item" href="#">Pizza hut </a></li>
                 <li><a class="dropdown-item" href="#">Cleartrip</a></li>
                 <li><a class="dropdown-item" href="#">Swiggy </a></li>
@@ -92,7 +93,7 @@
                 href="#"
                 >Electronics <i class="fa-solid fa-chevron-down"></i
               ></a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu dropdown-menu-end">
                 <li><a class="dropdown-item" href="#">Amazon</a></li>
                 <li><a class="dropdown-item" href="#">Flipkart </a></li>
                 <li><a class="dropdown-item" href="#">Croma </a></li>
@@ -113,7 +114,7 @@
                 href="#"
                 >Fashion and lifestyle <i class="fa-solid fa-chevron-down"></i>
               </a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu dropdown-menu-end">
                 <li><a class="dropdown-item" href="#">Ajio </a></li>
                 <li><a class="dropdown-item" href="#">Myntra </a></li>
                 <li><a class="dropdown-item" href="#">Firstcry </a></li>
@@ -123,7 +124,7 @@
                 <li><a class="dropdown-item" href="#">Zivame </a></li>
               </ul>
             </li>
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a
                 class="nav-link"
                 href="#"
@@ -133,7 +134,7 @@
                 href="#"
                 >Bank offer <i class="fa-solid fa-chevron-down"></i
               ></a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu dropdown-menu-end">
                 <li>
                   <a class="dropdown-item" href="#">Axis bank credit card </a>
                 </li>
@@ -147,7 +148,7 @@
                 </li>
                 <li><a class="dropdown-item" href="#">Sbi </a></li>
               </ul>
-            </li>
+            </li> -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link"
@@ -157,7 +158,7 @@
                 aria-expanded="false"
                 >Personal care <i class="fa-solid fa-chevron-down"></i
               ></a>
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu dropdown-menu-end">
                 <li><a class="dropdown-item" href="#">Wow </a></li>
                 <li><a class="dropdown-item" href="#">Mcaffine </a></li>
                 <li><a class="dropdown-item" href="#">Plum </a></li>
@@ -844,6 +845,7 @@
         </div>
       </div>
     </section>
+
     <!-- Personal care -->
     <section class="allTypeDeals">
       <div class="container">
@@ -954,8 +956,10 @@
     <!-- exclusive  -->
     <section class="exclusive_wrapper">
       <div class="container">
-        <h1 class="sectionTitle">Exclusive Deals</h1>
-
+        <div class="d-flex align-items-center justify-content-between">
+          <h1 class="sectionTitle">Exclusive Deals</h1>
+          <a href="#" class="btn btn-link">View All</a>
+        </div>
         <div class="row g-4">
           <div class="col-md-4">
             <div class="exclusive_item">
@@ -1066,8 +1070,226 @@
             </div>
           </div>
         </div>
-        <div class="text-center mt-4">
-          <a href="#" style="width: 300px;" class="btn btn-primary">View All</a>
+        <div class="text-center mt-4"></div>
+      </div>
+    </section>
+
+      <!-- Mobile Deals -->
+      <section class="allTypeDeals">
+        <div class="container">
+          <h1 class="sectionTitle">Hot Deals Of The Day</h1>
+          <div class="swiper delas">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div>
+                  <span class="platform">AmaZon Offer</span>
+                  <img src="./assets/img/mobiles/iqoo-z7s.jpg" alt="travel;" />
+                  <h2>
+                    iQOO Z7s 5G by vivo at Rs 17499 (After Rs 1500 SBI Credit
+                    Card)
+                  </h2>
+                  <div class="price">
+                    <span class="retularPrice">
+                      <i class="fa-solid fa-indian-rupee-sign"></i>23999
+                    </span>
+                    <span class="salePrice">
+                      <i class="fa-solid fa-indian-rupee-sign"></i>17499
+                    </span>
+                  </div>
+                  <button class="btn btn-primary">Get This Deal</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <span class="platform">Wow Offer</span>
+                  <img src="./assets/img/personalCare/wow.jpg" alt="travel;" />
+                  <h2>
+                    WOW Ubtan Face Serum at Rs 479 After Coupon (WOW20) + 5% Off
+                    on Prepaid
+                  </h2>
+                  <div class="price">
+                    <span class="retularPrice">
+                      <i class="fa-solid fa-indian-rupee-sign"></i>579
+                    </span>
+                    <span class="salePrice">
+                      <i class="fa-solid fa-indian-rupee-sign"></i>479
+                    </span>
+                  </div>
+                  <button class="btn btn-primary">Get This Deal</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <span class="platform">AmaZon Offer</span>
+                  <img
+                    src="./assets/img/kitchen/amazon-offer-home-kitchen-04.jpg"
+                    alt="travel;"
+                  />
+                  <h2>
+                    Upto 70% off + Extra 5% Amazon Pay Cash (Collect offer) on
+                    Home & Kitchen
+                  </h2>
+                  <div class="price">
+                    <span class="retularPrice">
+                      <i class="fa-solid fa-indian-rupee-sign"></i>1499
+                    </span>
+                    <span class="salePrice">
+                      <i class="fa-solid fa-indian-rupee-sign"></i>399
+                    </span>
+                  </div>
+                  <button class="btn btn-primary">Get This Deal</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <span class="platform">Flipkart Offer</span>
+                  <img
+                    src="./assets/img/kitchen/croma-300523.jpg"
+                    alt="travel;"
+                  />
+                  <h2>
+                    Flat 60% Off on Croma 250 Watt 6 Speed Hand Mixer with 4
+                    Attachments
+                  </h2>
+                  <div class="price">
+                    <span class="retularPrice">
+                      <i class="fa-solid fa-indian-rupee-sign"></i>2500
+                    </span>
+                    <span class="salePrice">
+                      <i class="fa-solid fa-indian-rupee-sign"></i>960
+                    </span>
+                  </div>
+                  <button class="btn btn-primary">Get This Deal</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <span class="platform"> BiBA</span>
+                  <img
+                    src="./assets/img/fashion/bibawomen-12082019.jpg"
+                    alt="travel;"
+                  />
+                  <h2>
+                    Flat 50% OFF on BIBA Women's Clothing + Extra 5% Coupon off
+                    'E...
+                  </h2>
+                  <div class="price">
+                    <span class="retularPrice">
+                      <i class="fa-solid fa-indian-rupee-sign"></i>2499
+                    </span>
+                    <span class="salePrice">
+                      <i class="fa-solid fa-indian-rupee-sign"></i>1499
+                    </span>
+                  </div>
+                  <button class="btn btn-primary">Get This Deal</button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <span class="platform">AmaZon Offer</span>
+                  <img src="./assets/img/mobiles/redmi-note.jpg" alt="travel;" />
+                  <h2>
+                    Redmi Note 12 5G Starting at Rs.14999 (After Rs 2000 HDFC Bank
+                    Discount) + Rs. 2K + 2K extra off as Base Exchange Bonus
+                  </h2>
+                  <div class="price">
+                    <span class="retularPrice">
+                      <i class="fa-solid fa-indian-rupee-sign"></i>19999
+                    </span>
+                    <span class="salePrice">
+                      <i class="fa-solid fa-indian-rupee-sign"></i>13999
+                    </span>
+                  </div>
+                  <button class="btn btn-primary">Get This Deal</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+
+    <!-- blog section -->
+    <section class="blogSection">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-between">
+          <h1 class="sectionTitle">Blog</h1>
+          <a href="#" class="btn btn-link">View All</a>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card blogItem">
+              <img
+                src="./assets/img/blog/blog_01.jpg"
+                class="card-img-top"
+                alt="blog"
+              />
+              <span class="date">March 26, 2018</span>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="#">
+                    Restaurant Employer Read Clients Orders On His Ipad</a
+                  >
+                </h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Quae, dignissimos ut. Architecto laborum, nostrum incidunt
+                  numquam omnis perspiciatis neque hic ullam sint explicabo ea,
+                  eligendi, porro error nesciunt. Nam, consectetur?
+                </p>
+                <a href="#" class="btn btn-link">Continue Reading </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card blogItem">
+              <img
+                src="./assets/img/blog/blog_02.jpg"
+                class="card-img-top"
+                alt="blog"
+              />
+              <span class="date">March 26, 2018</span>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="#">
+                    English Breakfast Tea With Tasty Donut Desserts</a
+                  >
+                </h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Quae, dignissimos ut. Architecto laborum, nostrum incidunt
+                  numquam omnis perspiciatis neque hic ullam sint explicabo ea,
+                  eligendi, porro error nesciunt. Nam, consectetur?
+                </p>
+                <a href="#" class="btn btn-link">Continue Reading </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card blogItem">
+              <img
+                src="./assets/img/blog/blog_04.jpg"
+                class="card-img-top"
+                alt="blog"
+              />
+              <span class="date">March 26, 2018</span>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="#">
+                    Amazing Classic Interior Design With Perfect Lighting</a
+                  >
+                </h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Quae, dignissimos ut. Architecto laborum, nostrum incidunt
+                  numquam omnis perspiciatis neque hic ullam sint explicabo ea,
+                  eligendi, porro error nesciunt. Nam, consectetur?
+                </p>
+                <a href="#" class="btn btn-link">Continue Reading </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -1076,7 +1298,9 @@
     <footer>
       <div class="container">
         <div class="companyLogo">
-          <img src="./assets/img/logo1.png" alt="logo" />
+          <a href="index.html">
+            <img src="./assets/img/logo-bottom.png" alt="logo" />
+          </a>
         </div>
         <ul class="fotterMenu">
           <li>

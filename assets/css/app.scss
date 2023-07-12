@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
 
 
-$primary: #0C134F;
+$primary: #f66f62;
 $secandary: #1D267D;
-$black: #0c0505;
+$black: #4f444c;
 $white: #fff;
 $grey: #838282;
 $radius: 8px;
@@ -32,27 +32,32 @@ ul {
   font-size: 16px;
 
   &-primary {
-    background-color: $secandary;
-    border-color: $secandary;
+    background-color: $primary;
+    border-color: $primary !important;
     padding: 6px 10px;
 
     &:hover {
-      background-color: $secandary;
+      background-color: $primary;
       opacity: 0.9;
+    }
+  }
+  &-link{
+    color: $primary;
+    text-decoration: none;
+    padding: 0;
+    &:hover, &:focus{
+      color: $primary;
+      text-decoration: underline;
     }
   }
 }
 
 /* navbar */
 .navbar {
-  background-color: $primary;
+  background-color: $white;
   position: sticky;
   top: 0;
   z-index: 9;
-
-  .navbar-brand {
-    color: $white;
-  }
 
   .navbar-nav {
     li {
@@ -64,10 +69,9 @@ ul {
     >li {
       >a {
 
-        color: $white;
+        color: rgba($color: #000000, $alpha: 0.7);
         font-weight: 500;
-        opacity: 0.8;
-        padding: 6px 10px !important;
+        padding: 6px 15px !important;
 
         i {
           font-size: 10px;
@@ -77,13 +81,13 @@ ul {
         &:focus,
         &:active:focus,
         &:active {
-          color: $white;
+          color: $primary;
           opacity: 1;
         }
 
         &.active,
         &.show {
-          color: $white;
+          color: $primary;
           opacity: 1;
         }
       }
@@ -91,20 +95,17 @@ ul {
       .dropdown-menu {
         top: calc(100% + 8px);
         padding: 0;
+        border-color: transparent;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
         overflow: hidden;
 
         li {
           a {
-            // --primary: 176, 183, 247;
-            color: $primary;
+            color: $black;
             padding: 8px 10px;
             transition: border 0.3s ease-in-out;
             font-weight: 500;
-            // &:hover{
-            //   background-color:rgba($primary, 1);
-            // }
 
           }
         }
@@ -223,8 +224,8 @@ ul {
         font-weight: 500;
         display: inline-block;
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 5px;
+        left: 5px;
       }
 
       img {
@@ -257,8 +258,8 @@ ul {
         position: absolute;
         top: 5px;
         right: 5px;
-        padding: 6px 10px;
-        font-size: 14px;
+        padding: 5px 8px;
+        font-size: 12px;
         background-color: $black;
         color: $white;
         border-radius: 4px;
@@ -379,11 +380,49 @@ ul {
   }
 }
 
+// blog
+.blogSection{
+  margin: 50px 0;
+}
+.blogItem{
+  position: relative;
+  border: none;
+  box-shadow: 0 5px 2px 0 rgba($color: #000000, $alpha: 0.1);
+  .date{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #333;
+    color: $white;
+    padding: 4px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .card-title{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    a{
+      color: $black;
+    }
+  }
+  .card-text{
+    font-size: 14px;
+    color: $grey;
+    margin-bottom: 10px;
+  }
+
+}
+
 // footer
 footer {
   padding: 20px;
   text-align: center;
-  background-color: $secandary;
+  background-color: #333;
+  .companyLogo{
+    margin: 30px 0;
+  }
 
   .socialMedia {
     display: flex;
@@ -465,9 +504,10 @@ footer {
 }
 
 // exclusive
-.exclusive_wrapper{
+.exclusive_wrapper {
   margin: 50px 0;
 }
+
 .exclusive_item {
   display: flex;
   // align-items: center;
@@ -476,24 +516,27 @@ footer {
   border-radius: $radius;
   overflow: hidden;
   height: 100%;
+
   .exclusive_image {
     width: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 5px;
+
     img {
       width: auto;
       max-width: 100%;
       object-fit: contain;
     }
-    
+
   }
-  
+
   .exclusive_content {
     padding: 15px;
     flex: 1;
-    .platform{
+
+    .platform {
       font-size: 12px;
       color: $grey;
     }
@@ -505,7 +548,8 @@ footer {
       font-weight: 500;
       margin: 4px 0 15px;
     }
-    button{
+
+    button {
       width: calc(100% - 10px);
       display: block;
       margin: auto;
