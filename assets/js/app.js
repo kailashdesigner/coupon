@@ -1,8 +1,8 @@
-// $('.bottomContent').hide();
-// $(".showContent").click(function () {
-//   $(this).next('.bottomContent').toggle();
+$('.bottomContent').hide();
+$(".showContent").click(function () {
+  $(this).next('.bottomContent').toggle();
   
-// });
+});
 
 // banner slider
 var swiper = new Swiper(".myBannerSwiper", {
