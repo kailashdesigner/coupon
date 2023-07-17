@@ -27,10 +27,20 @@ ul {
   list-style: none;
 }
 
+// mixing
+@mixin flexbox($display, $align, $justify, $wrap, $direction: 'row') {
+  display: $display;
+  align-items: $align;
+  justify-content: $justify;
+  flex-wrap: $wrap;
+  flex-direction: $direction;
+}
+
+
 // button
 .btn {
-  font-size: 16px;
-
+  font-size: 14px;
+  font-weight: 500;
   &-primary {
     background-color: $primary;
     border-color: $primary !important;
@@ -41,14 +51,52 @@ ul {
       opacity: 0.9;
     }
   }
-  &-link{
+
+  &-link {
     color: $primary;
     text-decoration: none;
     padding: 0;
-    &:hover, &:focus{
+
+    &:hover,
+    &:focus {
       color: $primary;
       text-decoration: underline;
     }
+  }
+}
+
+.couponButton{
+  background-color: transparent;
+  border:none;
+  box-shadow: none;
+  position: relative;
+  max-width: 140px;
+  height: 36px;
+  width: 100%;
+  overflow: hidden;
+  font-size: 14px;
+  .couponText,.couponCode{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+    border-radius: 4px;
+  }
+  .couponCode{
+    border: 1px dashed rgba($color: $grey, $alpha: 0.4);
+    background-color: #f0f0f0;
+    color: $black;
+    justify-content: flex-end;
+  }
+  .couponText{
+    background-color: $primary;
+    z-index: 2;
+    width: 90%;
   }
 }
 
@@ -381,14 +429,16 @@ ul {
 }
 
 // blog
-.blogSection{
+.blogSection {
   margin: 50px 0;
 }
-.blogItem{
+
+.blogItem {
   position: relative;
   border: none;
   box-shadow: 0 5px 2px 0 rgba($color: #000000, $alpha: 0.1);
-  .date{
+
+  .date {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -399,15 +449,18 @@ ul {
     font-size: 12px;
     font-weight: 500;
   }
-  .card-title{
+
+  .card-title {
     font-size: 16px;
     font-weight: 600;
     line-height: 1.4;
-    a{
+
+    a {
       color: $black;
     }
   }
-  .card-text{
+
+  .card-text {
     font-size: 14px;
     color: $grey;
     margin-bottom: 10px;
@@ -415,12 +468,132 @@ ul {
 
 }
 
+.infoSection {
+  margin-bottom: 50px;
+
+  h1 {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .infoContent {
+    h3 {
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+
+// .mainWrapper {
+//   height: calc(100vh - 230px);
+// }
+
+// inner pages
+.innerTitleSection {
+  background-color: #272e3a;
+  padding: 30px 0;
+}
+
+.pageTitle {
+  text-align: center;
+
+  h1 {
+    color: $white;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  p {
+    color: $grey;
+  }
+}
+
+
+.couponSection {
+  margin: 50px 0;
+}
+
+.offer-card {
+  background-color: $white;
+  border-radius:4px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.04);
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.offer-card-main {
+  padding:15px;
+  @include flexbox(flex, center, space-between, nowrap, row);
+  
+  .offer-details {
+    flex: auto;
+    margin-right: 15px;
+    .Verified{
+      margin-bottom: 10px;
+      font-size: 12px;
+      color: $black;
+      font-weight: 400;
+      i{
+        color:#1fa552;
+        font-size:14px;
+      }
+    }
+    h1 {
+      font-size: 18px;
+      color: $black;
+      font-weight: 600;
+      word-break: break-all;
+    }
+    p{
+      margin-bottom: 0;
+      font-size: 13px;
+    }
+  }
+  button{
+    white-space: nowrap;
+  }
+}
+
+.offer-card-bottom{
+  border-top: 1px solid rgba($color: $grey, $alpha: 0.1);
+  padding:10px 15px;
+  background-color: #f7f7f7;
+  button{
+    font-size: 13px;
+    padding: 0px !important;
+  }
+  .bottomContent{
+
+    margin-top: 6px;
+    p{
+      margin-bottom: 6px;
+    }
+    ul{
+      margin-left: 18px;
+      li{
+        list-style-type:disc;
+        font-size: 12px;
+        padding: 2px 0;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
 // footer
 footer {
+  margin-top: auto;
   padding: 20px;
   text-align: center;
   background-color: #333;
-  .companyLogo{
+
+  .companyLogo {
     margin: 30px 0;
   }
 

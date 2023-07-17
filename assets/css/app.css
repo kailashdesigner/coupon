@@ -16,7 +16,8 @@ ul {
 }
 
 .btn {
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 500;
 }
 .btn-primary {
   background-color: #f66f62;
@@ -35,6 +36,41 @@ ul {
 .btn-link:hover, .btn-link:focus {
   color: #f66f62;
   text-decoration: underline;
+}
+
+.couponButton {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  position: relative;
+  max-width: 140px;
+  height: 36px;
+  width: 100%;
+  overflow: hidden;
+  font-size: 14px;
+}
+.couponButton .couponText, .couponButton .couponCode {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
+  border-radius: 4px;
+}
+.couponButton .couponCode {
+  border: 1px dashed rgba(131, 130, 130, 0.4);
+  background-color: #f0f0f0;
+  color: #4f444c;
+  justify-content: flex-end;
+}
+.couponButton .couponText {
+  background-color: #f66f62;
+  z-index: 2;
+  width: 90%;
 }
 
 /* navbar */
@@ -301,7 +337,114 @@ ul {
   margin-bottom: 10px;
 }
 
+.infoSection {
+  margin-bottom: 50px;
+}
+.infoSection h1 {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.infoSection .infoContent h3 {
+  font-size: 12px;
+  font-weight: 600;
+}
+.infoSection .infoContent p {
+  font-size: 12px;
+}
+
+.innerTitleSection {
+  background-color: #272e3a;
+  padding: 30px 0;
+}
+
+.pageTitle {
+  text-align: center;
+}
+.pageTitle h1 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+.pageTitle p {
+  color: #838282;
+}
+
+.couponSection {
+  margin: 50px 0;
+}
+
+.offer-card {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.offer-card-main {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.offer-card-main .offer-details {
+  flex: auto;
+  margin-right: 15px;
+}
+.offer-card-main .offer-details .Verified {
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #4f444c;
+  font-weight: 400;
+}
+.offer-card-main .offer-details .Verified i {
+  color: #1fa552;
+  font-size: 14px;
+}
+.offer-card-main .offer-details h1 {
+  font-size: 18px;
+  color: #4f444c;
+  font-weight: 600;
+  word-break: break-all;
+}
+.offer-card-main .offer-details p {
+  margin-bottom: 0;
+  font-size: 13px;
+}
+.offer-card-main button {
+  white-space: nowrap;
+}
+
+.offer-card-bottom {
+  border-top: 1px solid rgba(131, 130, 130, 0.1);
+  padding: 10px 15px;
+  background-color: #f7f7f7;
+}
+.offer-card-bottom button {
+  font-size: 13px;
+  padding: 0px !important;
+}
+.offer-card-bottom .bottomContent {
+  margin-top: 6px;
+}
+.offer-card-bottom .bottomContent p {
+  margin-bottom: 6px;
+}
+.offer-card-bottom .bottomContent ul {
+  margin-left: 18px;
+}
+.offer-card-bottom .bottomContent ul li {
+  list-style-type: disc;
+  font-size: 12px;
+  padding: 2px 0;
+  font-weight: 500;
+}
+
 footer {
+  margin-top: auto;
   padding: 20px;
   text-align: center;
   background-color: #333;

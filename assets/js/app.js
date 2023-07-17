@@ -1,3 +1,8 @@
+$('.bottomContent').hide();
+$(".showContent").click(function () {
+  $(this).next('.bottomContent').toggle();
+  
+});
 
 // banner slider
 var swiper = new Swiper(".myBannerSwiper", {
@@ -23,7 +28,7 @@ var swiper = new Swiper(".myBannerSwiper", {
     },
     1024: {
       slidesPerView: 2,
-      spaceBetween: 10,
+      spaceBetween: 20,
     },
   },
 });
