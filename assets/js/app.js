@@ -4,6 +4,7 @@ $(".showContent").click(function () {
   
 });
 
+
 // banner slider
 var swiper = new Swiper(".myBannerSwiper", {
   slidesPerView: 3,
