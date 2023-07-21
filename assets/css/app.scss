@@ -3,7 +3,7 @@
 
 $primary: #f66f62;
 $secandary: #1D267D;
-$black: #4f444c;
+$black: #000;
 $white: #fff;
 $grey: #838282;
 $radius: 8px;
@@ -28,12 +28,11 @@ ul {
 }
 
 // mixing
-@mixin flexbox($display, $align, $justify, $wrap, $direction: 'row') {
+@mixin flexbox($display, $align, $justify, $wrap, ) {
   display: $display;
   align-items: $align;
   justify-content: $justify;
   flex-wrap: $wrap;
-  flex-direction: $direction;
 }
 
 
@@ -41,6 +40,7 @@ ul {
 .btn {
   font-size: 14px;
   font-weight: 500;
+
   &-primary {
     background-color: $primary;
     border-color: $primary !important;
@@ -65,9 +65,9 @@ ul {
   }
 }
 
-.couponButton{
+.couponButton {
   background-color: transparent;
-  border:none;
+  border: none;
   box-shadow: none;
   position: relative;
   max-width: 140px;
@@ -75,7 +75,9 @@ ul {
   width: 100%;
   overflow: hidden;
   font-size: 14px;
-  .couponText,.couponCode{
+
+  .couponText,
+  .couponCode {
     position: absolute;
     top: 0;
     left: 0;
@@ -87,13 +89,15 @@ ul {
     padding: 0 5px;
     border-radius: 4px;
   }
-  .couponCode{
+
+  .couponCode {
     border: 1px dashed rgba($color: $grey, $alpha: 0.4);
     background-color: #f0f0f0;
     color: $black;
     justify-content: flex-end;
   }
-  .couponText{
+
+  .couponText {
     background-color: $primary;
     z-index: 2;
     width: 90%;
@@ -521,63 +525,73 @@ ul {
 
 .offer-card {
   background-color: $white;
-  border-radius:4px;
-  box-shadow: 0 0 10px 0 rgba(0,0,0,0.04);
+  border-radius: 4px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.04);
   overflow: hidden;
   margin-bottom: 30px;
 }
 
 .offer-card-main {
-  padding:15px;
-  @include flexbox(flex, center, space-between, nowrap, row);
-  
+  padding: 15px;
+  @include flexbox(flex, center, space-between, nowrap);
+
   .offer-details {
     flex: auto;
     margin-right: 15px;
-    .Verified{
+
+    .Verified {
       margin-bottom: 10px;
       font-size: 12px;
       color: $black;
       font-weight: 400;
-      i{
-        color:#1fa552;
-        font-size:14px;
+
+      i {
+        color: #1fa552;
+        font-size: 14px;
       }
     }
+
     h1 {
       font-size: 18px;
       color: $black;
       font-weight: 600;
       word-break: break-all;
     }
-    p{
+
+    p {
       margin-bottom: 0;
       font-size: 13px;
     }
   }
-  button{
+
+  button {
     white-space: nowrap;
   }
 }
 
-.offer-card-bottom{
+.offer-card-bottom {
   border-top: 1px solid rgba($color: $grey, $alpha: 0.1);
-  padding:10px 15px;
+  padding: 10px 15px;
   background-color: #f7f7f7;
-  button{
+
+  button {
     font-size: 13px;
     padding: 0px !important;
   }
-  .bottomContent{
+
+  .bottomContent {
 
     margin-top: 6px;
-    p{
+
+    p {
       margin-bottom: 6px;
     }
-    ul{
+
+    ul {
       margin-left: 18px;
-      li{
-        list-style-type:disc;
+
+      li {
+        list-style-type: disc;
         font-size: 12px;
         padding: 2px 0;
         font-weight: 500;
@@ -727,6 +741,113 @@ footer {
       display: block;
       margin: auto;
     }
+  }
+}
+
+// aboutPage
+.aboutPage {
+  background-color: #f5f5f5;
+  @include flexbox(flex, flex-start, flex-start, nowrap);
+  padding: 30px 20px;
+
+  div {
+    flex: auto;
+    text-align: left;
+    padding-left: 15px;
+  }
+
+  img {
+    height: 50px;
+  }
+
+  h1 {
+    font-size: 18px;
+    color: $black;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  p {
+    color: $grey;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+}
+
+// modal
+.modal {
+
+  .modal-body {
+    padding: 0px;
+
+    .titleNew {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+
+  }
+}
+
+.couponWrapper {
+  padding: 40px 20px;
+  text-align: center;
+  p{
+    color: $grey;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 14px;
+    a{
+      color: $primary;
+    }
+  }
+}
+
+.offerCode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // margin: 30px auto;
+
+  .couponInfo {
+    border: 1px dashed $primary;
+    padding: 0px 30px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 220px;
+    position: relative;
+    @include flexbox(flex,center ,center ,wrap );
+    h1{
+      color: $primary;
+      font-weight: 600;
+      margin: 0;
+      font-size: 18px;
+    }
+    .spinner{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 2px;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9;
+      i{
+        font-size: 24px;
+        color: $primary;
+      }
+    }
+  }
+
+  button {
+    border-radius: 0;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    padding: 0 20px;
+    margin-left: -1px;
   }
 }
 

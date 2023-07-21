@@ -361,7 +361,7 @@
       <section class="innerTitleSection">
         <div class="container">
           <div class="pageTitle">
-            <h1>MakeMyTrip Coupons</h1>
+            <h1>MakeMyTrip</h1>
             <p>
               MakeMyTrip offers its customers a variety of travel services and
               products. So for great mmt deals on travel, hotel reservations,
@@ -373,40 +373,6 @@
           </div>
         </div>
       </section>
-
-      <!-- Modal -->
-      <div
-        class="modal fade"
-        id="exampleModal"
-        tabindex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="titleNew">Modal title</h1>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <div class="spinner">
-                <i class="fa fa-spinner fa-spin"></i>
-              </div>
-             
-                <h1 class="titleNew"></h1>
-                <p class="content"></p>
-                <div class="offerCode"></div>
-              
-            </div>
-            
-          </div>
-        </div>
-      </div>
 
       <section class="couponSection">
         <div class="container">
@@ -764,6 +730,49 @@
         </ul>
       </div>
     </footer>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="aboutPage">
+              <img src="./assets/img/makemytrip-logo-small.jpg" alt="logo" />
+              <div>
+                <h1 class="titleNew"></h1>
+                <p class="content"></p>
+              </div>
+            </div>
+
+            <!-- <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button> -->
+            <div class="couponWrapper">
+              <div class="offerCode">
+                <div class="couponInfo">
+                  <h1 class="Code"></h1>
+                  <div class="spinner">
+                    <i class="fa  fa-spinner fa-spin"></i>
+                  </div>
+                </div>
+                <button class="btn btn-primary">Copy Code</button>
+              </div>
+              <p><a class="anchor" target="_blank" href="#">View Site</a>
+                and paste your code at checkout</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.js"></script>
     <script
@@ -798,23 +807,28 @@
         var modalBox = $("#exampleModal");
         var modalTitle = modalBox.find(".titleNew");
         var modalParaGrapf = modalBox.find(".content");
-        var modalOfferCode = modalBox.find(".offerCode");
+        var modalOfferCode = modalBox.find(".Code");
+        var modalAnchor = modalBox.find(".anchor");
         var buttons = $(".showButtonNew");
+        var pageTitle = $(".pageTitle h1").text();
         buttons.click(function () {
           var title = $(this).parent().find("h1").text();
           var content = $(this).parent().find("p").text();
           var couponCode = $(this).find(".couponCode").text();
           var weblocation = $(this).next("a").attr("href");
+          console.log(couponCode);
 
           modalTitle.text(title);
           modalParaGrapf.text(content);
           modalOfferCode.text(couponCode);
-          window.open(weblocation, "_blank");
-          $(".offerCode").hide();
+          modalAnchor.attr("href", weblocation);
+          $(".Code").hide();
+          $('.spinner').show();
+          // window.open(weblocation, "_blank");
           setTimeout(function () {
-            $(".offerCode").show();
+            $(".Code").show();
             $('.spinner').hide();
-          }, 10000);
+          }, 4000);
         });
       });
     </script>
