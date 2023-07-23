@@ -684,6 +684,7 @@
       </section>
     </div>
 
+    <button id="btnPassData">Click to Pass Data</button>
     <!-- footer -->
     <footer>
       <div class="container">
@@ -740,6 +741,12 @@
     >
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
           <div class="modal-body">
             <div class="aboutPage">
               <img src="./assets/img/makemytrip-logo-small.jpg" alt="logo" />
@@ -749,24 +756,20 @@
               </div>
             </div>
 
-            <!-- <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button> -->
             <div class="couponWrapper">
               <div class="offerCode">
                 <div class="couponInfo">
                   <h1 class="Code"></h1>
                   <div class="spinner">
-                    <i class="fa  fa-spinner fa-spin"></i>
+                    <i class="fa fa-spinner fa-spin"></i>
                   </div>
                 </div>
                 <button class="btn btn-primary">Copy Code</button>
               </div>
-              <p><a class="anchor" target="_blank" href="#">View Site</a>
-                and paste your code at checkout</p>
+              <p>
+                <a class="anchor" target="_blank" href="#">View Site</a> and
+                paste your code at checkout
+              </p>
             </div>
           </div>
         </div>
@@ -781,28 +784,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- <script
-      src="https:/kit.fontawesome.com/cdae6b0ae3.js"
-      crossorigin="anonymous"
-    ></script> -->
     <script src="./assets/js/app.js"></script>
     <script>
-      // $(document).ready(function () {
-      // When the button is clicked, get the card data and show it in the modal
-      // $(".showButtonNew").click(function () {
-      //   var title = $(this).parent('.offer-details h1').text()
-      //   var modalBox = $("#exampleModal .titleNew");
-      //   modalBox.text(title);
-
-      //   console.log(modalBox);
-
-      // var cardData = $(".card-text").text();
-      // $("#cardData").text(cardData);
-      // $("#myModal").modal("show");
-      // });
-
-      // });
-
+   
       $(document).ready(function () {
         var modalBox = $("#exampleModal");
         var modalTitle = modalBox.find(".titleNew");
@@ -811,11 +795,13 @@
         var modalAnchor = modalBox.find(".anchor");
         var buttons = $(".showButtonNew");
         var pageTitle = $(".pageTitle h1").text();
-        buttons.click(function () {
+        buttons.click(function (value) {
+          var thisButton = $(this);
           var title = $(this).parent().find("h1").text();
           var content = $(this).parent().find("p").text();
           var couponCode = $(this).find(".couponCode").text();
           var weblocation = $(this).next("a").attr("href");
+
           console.log(couponCode);
 
           modalTitle.text(title);
@@ -823,14 +809,24 @@
           modalOfferCode.text(couponCode);
           modalAnchor.attr("href", weblocation);
           $(".Code").hide();
-          $('.spinner').show();
+          $(".spinner").show();
           // window.open(weblocation, "_blank");
           setTimeout(function () {
+            $(thisButton).addClass("showCouponCode");
             $(".Code").show();
-            $('.spinner').hide();
+            $(".spinner").hide();
           }, 4000);
+        });
+
+        $("#btnPassData").on("click", function () {
+          var dataToSend = "asdfasdfasdf";
+          sessionStorage.setItem("dataToSend", dataToSend);
+          var targetPage = "redeem.html";
+          var urlWithQueryParams = targetPage + "?openInNewTab=true";
+          window.open(urlWithQueryParams, "_blank");
         });
       });
     </script>
+   
   </body>
 </html>

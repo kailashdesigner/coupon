@@ -73,6 +73,12 @@ ul {
   z-index: 2;
   width: 90%;
 }
+.couponButton.showCouponCode .couponText {
+  display: none;
+}
+.couponButton.showCouponCode .couponCode {
+  justify-content: center;
+}
 
 /* navbar */
 .navbar {
@@ -579,6 +585,12 @@ footer .fotterMenu li:last-child a {
   margin-bottom: 0;
 }
 
+.modal .btn-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 99;
+}
 .modal .modal-body {
   padding: 0px;
 }
@@ -649,4 +661,109 @@ footer .fotterMenu li:last-child a {
   margin-left: -1px;
 }
 
+.redeemPage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.redeemPage .redeemWrap {
+  max-width: 600px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 40px 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.04);
+  text-align: center;
+}
+.redeemPage .redeemWrap p {
+  color: #838282;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.redeemPage .redeemWrap .dealActivated {
+  border: 1px dashed #f66f62;
+  max-width: 350px;
+  font-size: 14px;
+  padding: 10px 5px;
+  border-radius: 4px;
+  margin: 20px auto;
+  color: #838282;
+}
+.redeemPage .redeemWrap .dealActivated span {
+  font-weight: 500;
+  color: #f66f62;
+}
+.redeemPage .redeemWrap h4 {
+  color: #f66f62;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.redeemPage .redeemWrap .redirectingProcess {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.redeemPage .redeemWrap .redirectingProcess img {
+  height: 30px;
+}
+
+/**
+ * ==============================================
+ * Dot Flashing
+ * ==============================================
+ */
+.dot-flashing {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  margin-inline: 40px;
+  border-radius: 5px;
+  background-color: #f66f62;
+  color: #f66f62;
+  animation: dot-flashing 1s infinite linear alternate;
+  animation-delay: 0.5s;
+}
+
+.dot-flashing::before,
+.dot-flashing::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+}
+
+.dot-flashing::before {
+  left: -15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #f66f62;
+  color: #f66f62;
+  animation: dot-flashing 1s infinite alternate;
+  animation-delay: 0s;
+}
+
+.dot-flashing::after {
+  left: 15px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #f66f62;
+  color: #f66f62;
+  animation: dot-flashing 1s infinite alternate;
+  animation-delay: 1s;
+}
+
+@keyframes dot-flashing {
+  0% {
+    background-color: #f66f62;
+  }
+  50%, 100% {
+    background-color: rgba(152, 128, 255, 0.2);
+  }
+}
 /*# sourceMappingURL=app.css.map */

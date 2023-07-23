@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Redeem</title>
+    <link href="./assets/css/bootstrap.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.1/swiper-bundle.css"
+      integrity="sha512-l7kpss+EakeeIboLV6JMyXOnym/Ls1WoZ7wiutyGSNbzgTO6AyTSw5Xe5JsRcqR592JBETP/OD6AZREwrAxD2Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./assets/css/app.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- <h1 class="title"></h1> -->
+    <div class="redeemPage">
+      <div class="redeemWrap">
+        <p class="title">Exclusive: Upto 15% Off On Domestic Flight Booking</p>
+        <div class="dealActivated">
+          <span>Deal Activated</span> No coupon code Required!
+        </div>
+        <h4>Please wait while we are redirecting you to MakeMyTrip</h4>
+        <div class="redirectingProcess">
+          <img src="./assets/img/logo.png" style="height: 12px" alt="logo" />
+          <div class="dot-flashing"></div>
+          <img src="./assets/img/makemytrip-logo-small.jpg" alt="logo" />
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.1/swiper-bundle.min.js"
+      integrity="sha512-amT8JUsTgg8svD43Vnz8K+C5Obi5Njn+q2zyVixZrBAU6xk4awXGIQNrVTTZNpJZk8D2hTPOSsLNEHSnSNzv7g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var urlParams = new URLSearchParams(window.location.search);
+        var nameTit = document.querySelector(".title");
+        var openInNewTab = urlParams.get("openInNewTab");
+        if (openInNewTab === "true") {
+          var receivedData = sessionStorage.getItem("dataToSend");
+          if (receivedData) {
+            console.log("Received data: " + receivedData);
+            nameTit.innerHTML = receivedData;
+          }
+
+          // Redirect to another link after 5 secondsexample (5000 milliseconds)
+          setTimeout(function () {
+            window.location.href = "https://www.flipkart.com";
+          }, 5000);
+        }
+      });
+    </script>
+  </body>
+</html>
