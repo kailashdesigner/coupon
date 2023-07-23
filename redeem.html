@@ -25,15 +25,24 @@
     <!-- <h1 class="title"></h1> -->
     <div class="redeemPage">
       <div class="redeemWrap">
-        <p class="title">Exclusive: Upto 15% Off On Domestic Flight Booking</p>
+        <p class="content">
+          Exclusive: Upto 15% Off On Domestic Flight Booking
+        </p>
         <div class="dealActivated">
           <span>Deal Activated</span> No coupon code Required!
         </div>
-        <h4>Please wait while we are redirecting you to MakeMyTrip</h4>
+        <h4>
+          Please wait while we are redirecting you to
+          <span id="redirectName"></span>
+        </h4>
         <div class="redirectingProcess">
           <img src="./assets/img/logo.png" style="height: 12px" alt="logo" />
           <div class="dot-flashing"></div>
-          <img src="./assets/img/makemytrip-logo-small.jpg" alt="logo" />
+          <img
+            id="logo"
+            src="./assets/img/makemytrip-logo-small.jpg"
+            alt="logo"
+          />
         </div>
       </div>
     </div>
@@ -47,22 +56,36 @@
       referrerpolicy="no-referrer"
     ></script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var urlParams = new URLSearchParams(window.location.search);
-        var nameTit = document.querySelector(".title");
-        var openInNewTab = urlParams.get("openInNewTab");
-        if (openInNewTab === "true") {
-          var receivedData = sessionStorage.getItem("dataToSend");
-          if (receivedData) {
-            console.log("Received data: " + receivedData);
-            nameTit.innerHTML = receivedData;
-          }
+      // document.addEventListener("DOMContentLoaded", function () {
+      //   var urlParams = new URLSearchParams(window.location.search);
+      //   var redirectName = document.querySelector("#redirectName");
+      //   var redirectLogo = document.querySelector("#logo");
+      //   var redirectContent = document.querySelector(".content");
+      //   var openInNewTab = urlParams.get("openInNewTab");
+      //   if (openInNewTab === "true") {
+      //     var receivedData = sessionStorage.getItem("redirectPageName");
+      //     if (receivedData) {
+      //       console.log("Received data: " + receivedData);
+      //       redirectName.innerHTML = receivedData;
+      //       text(cardData[0]);
+      //     }
 
-          // Redirect to another link after 5 secondsexample (5000 milliseconds)
-          setTimeout(function () {
-            window.location.href = "https://www.flipkart.com";
-          }, 5000);
-        }
+      //     setTimeout(function () {
+      //       window.location.href = "https://www.flipkart.com";
+      //     }, 5000);
+      //   }
+      // });
+
+      $(document).ready(function () {
+        // Retrieve card data from query parameters
+        var urlParams = new URLSearchParams(window.location.search);
+        var cardDataJSON = urlParams.get("data");
+        var cardData = JSON.parse(cardDataJSON);
+        $("#redirectName").text(cardData[0]);
+        $("#logo").attr("src", cardData[1]);
+        setTimeout(function () {
+          window.location.href = "https://www.flipkart.com";
+        }, 2000);
       });
     </script>
   </body>
