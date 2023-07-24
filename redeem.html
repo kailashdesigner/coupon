@@ -83,8 +83,10 @@
         var cardData = JSON.parse(cardDataJSON);
         $("#redirectName").text(cardData[0]);
         $("#logo").attr("src", cardData[1]);
+        $('.content').text(cardData[2])
+        console.log({cardData})
         setTimeout(function () {
-          window.location.href = "https://www.flipkart.com";
+          window.location.href = cardData[3]
         }, 2000);
       });
     </script>

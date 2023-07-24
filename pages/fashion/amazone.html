@@ -575,12 +575,12 @@
     <script>
       $(document).ready(function () {
         
-        function storeCardData() {
+        function storeCardData(redirectItemContent, weblocation) {
           var pageName = $(".innerTitleSection h1").text();
           var pageLogo = $(".innerTitleSection img").attr("src");
 
           // Create an array with the card data
-          var cardArray = [pageName, pageLogo];
+          var cardArray = [pageName, pageLogo, redirectItemContent, weblocation];
 
           // Convert the array to a JSON string
           var cardArrayJSON = JSON.stringify(cardArray);
@@ -592,9 +592,9 @@
         $(".btnPassData").on("click", function () {
           var redirectItemContent = $(this).parent().find("p").text();
           var weblocation = $(this).next("a").attr("href");
-          console.log(redirectItemContent, weblocation);
+          // console.log(redirectItemContent, weblocation);
           // Store card data in sessionStorage
-          storeCardData();
+          storeCardData(redirectItemContent, weblocation);
 
           // Navigate to another page and pass data as query parameters
           var targetPage = "../../redeem.html";
