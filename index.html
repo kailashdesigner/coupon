@@ -1,240 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Active Deal</title>
-    <link rel="shortcut icon" href="./assets/img/favicon.ico">
-    <link href="./assets/css/bootstrap.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.1/swiper-bundle.css"
-      integrity="sha512-l7kpss+EakeeIboLV6JMyXOnym/Ls1WoZ7wiutyGSNbzgTO6AyTSw5Xe5JsRcqR592JBETP/OD6AZREwrAxD2Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link href="./assets/css/app.css" rel="stylesheet" />
-  </head>
-  <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo03"
-          aria-controls="navbarTogglerDemo03"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">
-          <img src="./assets/img/logo.png" alt="logo" />
-        </a>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Travel <i class="fa-solid fa-chevron-down"></i>
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li>
-                  <a class="dropdown-item" href="./pages/travel/makemytrip.html"
-                    >Makemytrip</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/travel/cleartrip.html"
-                    >Cleartrip</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/travel/agoda.html"
-                    >Agoda</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/travel/oyo.html"
-                    >Oyo
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="./pages/travel/booking-com.html"
-                    >Booking.com
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/travel/goibibo.html"
-                    >Goibibo
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                href="#"
-              >
-                Food <i class="fa-solid fa-chevron-down"></i>
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li>
-                  <a class="dropdown-item" href="./pages/food/pizzahut.html"
-                    >Pizza hut
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/food/swiggy.html"
-                    >Swiggy
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/food/dominos.html"
-                    >Dominos
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/food/Igp.html">Igp </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/food/fnp.html">Fnp </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                href="#"
-                >Electronics <i class="fa-solid fa-chevron-down"></i
-              ></a>
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="./pages/electronics/amazon.html"
-                    >Amazon</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="./pages/electronics/flipkart.html"
-                    >Flipkart
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/electronics/croma.html"
-                    >Croma
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="./pages/electronics/samsung.html"
-                    >Samsung
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/electronics/boat.html"
-                    >Boat
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/electronics/dell.html"
-                    >Dell
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/electronics/hp.html"
-                    >Hp
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="./pages/electronics/lenovo.html"
-                    >Lenovo
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                href="#"
-                >Fashion and lifestyle <i class="fa-solid fa-chevron-down"></i>
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li>
-                  <a class="dropdown-item" href="./pages/fashion/ajio.html"
-                    >Ajio
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/fashion/myntra.html"
-                    >Myntra
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/fashion/firstcry.html"
-                    >Firstcry
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/fashion/m&s.html"
-                    >M&S
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/fashion/amazone.html"
-                    >Amazone
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/fashion/flipkart.html"
-                    >Flipkart
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/fashion/zivame.html"
-                    >Zivame
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <!-- <li class="nav-item dropdown">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Active Deal</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.ico">
+  <link href="./assets/css/bootstrap.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.1/swiper-bundle.css"
+    integrity="sha512-l7kpss+EakeeIboLV6JMyXOnym/Ls1WoZ7wiutyGSNbzgTO6AyTSw5Xe5JsRcqR592JBETP/OD6AZREwrAxD2Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./assets/css/app.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <img src="./assets/img/logo.png" alt="logo" />
+      </a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Travel <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a class="dropdown-item" href="./pages/travel/makemytrip.html">Makemytrip</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/travel/cleartrip.html">Cleartrip</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/travel/agoda.html">Agoda</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/travel/oyo.html">Oyo
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/travel/booking-com.html">Booking.com
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/travel/goibibo.html">Goibibo
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">
+              Food <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a class="dropdown-item" href="./pages/food/pizzahut.html">Pizza hut
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/food/swiggy.html">Swiggy
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/food/dominos.html">Dominos
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/food/Igp.html">Igp </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/food/fnp.html">Fnp </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+              href="#">Electronics <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a class="dropdown-item" href="./pages/electronics/amazon.html">Amazon</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/electronics/flipkart.html">Flipkart
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/electronics/croma.html">Croma
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/electronics/samsung.html">Samsung
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/electronics/boat.html">Boat
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/electronics/dell.html">Dell
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/electronics/hp.html">Hp
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/electronics/lenovo.html">Lenovo
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Fashion
+              and lifestyle <i class="fa-solid fa-chevron-down"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a class="dropdown-item" href="./pages/fashion/ajio.html">Ajio
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/fashion/myntra.html">Myntra
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/fashion/firstcry.html">Firstcry
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/fashion/m&s.html">M&S
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/fashion/amazone.html">Amazone
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/fashion/flipkart.html">Flipkart
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/fashion/zivame.html">Zivame
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- <li class="nav-item dropdown">
               <a
                 class="nav-link"
                 href="#"
@@ -259,1330 +182,1187 @@
                 <li><a class="dropdown-item" href="#">Sbi </a></li>
               </ul>
             </li> -->
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Personal care <i class="fa-solid fa-chevron-down"></i
-              ></a>
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li>
-                  <a class="dropdown-item" href="./pages/personalcare/wow.html"
-                    >Wow
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="./pages/personalcare/mcaffine.html"
-                    >Mcaffine
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/personalcare/plum.html"
-                    >Plum
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="./pages/personalcare/beardo.html"
-                    >Beardo
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/personalcare/bsc.html"
-                    >Bsc
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/personalcare/nyka.html"
-                    >Nyka
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="./pages/personalcare/kama-ayurveda.html"
-                    >Kama ayurveda
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="./pages/personalcare/thebodyshop.html"
-                    >The body shop
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="./pages/personalcare/jiva.html"
-                    >Jiva
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Personal care <i
+                class="fa-solid fa-chevron-down"></i></a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li>
+                <a class="dropdown-item" href="./pages/personalcare/wow.html">Wow
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/personalcare/mcaffine.html">Mcaffine
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/personalcare/plum.html">Plum
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/personalcare/beardo.html">Beardo
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/personalcare/bsc.html">Bsc
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/personalcare/nyka.html">Nyka
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/personalcare/kama-ayurveda.html">Kama ayurveda
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/personalcare/thebodyshop.html">The body shop
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/personalcare/jiva.html">Jiva
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- slider -->
-    <div class="bannerSlider">
-      <div class="container">
-        <div class="swiper myBannerSwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <a href="#">
-                <img
-                  src="./assets/img/amazon-Desktop---28-06-2023-1688041499.png"
-                  class="d-block w-100"
-                  alt="banner 1"
-                />
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#">
-                <img
-                  src="./assets/img/BK-Desktop-28-06-2023-1687930025.png"
-                  class="d-block w-100"
-                  alt="banner 2"
-                />
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#">
-                <img
-                  src="./assets/img/Desktop-28-06-2023(1)-1688041374.png"
-                  class="d-block w-100"
-                  alt="banner 3"
-                />
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#">
-                <img
-                  src="./assets/img/Desktop_Levis-28-06-2023-1688041534.png"
-                  class="d-block w-100"
-                  alt="banner 1"
-                />
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#">
-                <img
-                  src="./assets/img/FLAT-1688041434.png"
-                  class="d-block w-100"
-                  alt="banner 2"
-                />
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#">
-                <img
-                  src="./assets/img/HDFC-Desktop-16-06-2023-1686984458.png"
-                  class="d-block w-100"
-                  alt="banner 3"
-                />
-              </a>
+  <!-- slider -->
+  <div class="bannerSlider">
+    <div class="container">
+      <div class="swiper myBannerSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="./assets/img/amazon-Desktop---28-06-2023-1688041499.png" class="d-block w-100" alt="banner 1" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="./assets/img/BK-Desktop-28-06-2023-1687930025.png" class="d-block w-100" alt="banner 2" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="./assets/img/Desktop-28-06-2023(1)-1688041374.png" class="d-block w-100" alt="banner 3" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="./assets/img/Desktop_Levis-28-06-2023-1688041534.png" class="d-block w-100" alt="banner 1" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="./assets/img/FLAT-1688041434.png" class="d-block w-100" alt="banner 2" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="./assets/img/HDFC-Desktop-16-06-2023-1686984458.png" class="d-block w-100" alt="banner 3" />
+            </a>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- top categories -->
+  <section class="topCategoriesSlider">
+    <div class="container">
+      <h1 class="sectionTitle">Top Categories</h1>
+      <div class="swiper topCategoriesSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="./assets/img/travel.png" alt="travel;" />
+
+              <h2>Travel</h2>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="./assets/img/food.png" alt="food" />
+              <h2>Food</h2>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="./assets/img/electronics.png" alt="electronics" />
+              <h2>Electronics</h2>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="./assets/img/fashion.png" alt="fashion" />
+              <h2>Fashion</h2>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="./assets/img/bankOffer.png" alt="bank Offer" />
+              <h2>Bank Offer</h2>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#">
+              <img src="./assets/img/personalCare.png" alt="personalCare" />
+              <h2>Personal Care</h2>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- todays top deals -->
+  <section class="todayTopDeals">
+    <div class="container">
+      <h1 class="sectionTitle">Todays top deal</h1>
+      <ul class="todayDeal">
+        <li>
+          <span class="offer"> 25% OFF Code </span>
+          <img src="./assets/img/amazon.png" alt="todayDeal" />
+          <button class="btn btn-primary">EARN UPTO 5% REWARDS</button>
+        </li>
+        <li>
+          <span class="offer">Any 3 AT <i class="fa-solid fa-indian-rupee-sign"></i>1399</span>
+          <img src="./assets/img/booking.jpg" alt="todayDeal" />
+          <button class="btn btn-primary">EARN UPTO 5% REWARDS</button>
+        </li>
+        <li>
+          <span class="offer">10% OFF Code</span>
+          <img src="./assets/img/colgate.jpg" alt="todayDeal" />
+          <button class="btn btn-primary">EARN UPTO 5% REWARDS</button>
+        </li>
+        <li>
+          <span class="offer">Flat 40% off</span>
+          <img src="./assets/img/hm.png" alt="todayDeal" />
+          <button class="btn btn-primary">EARN UPTO 5% REWARDS</button>
+        </li>
+        <li>
+          <span class="offer">20% off Code</span>
+          <img src="./assets/img/nykaafashion-coupons-1653563244.png" alt="todayDeal" />
+          <button class="btn btn-primary">EARN UPTO 5% REWARDS</button>
+        </li>
+        <li>
+          <span class="offer">OMG</span>
+          <img src="./assets/img/myntra.png" alt="todayDeal" />
+          <button class="btn btn-primary">EARN UPTO 5% REWARDS</button>
+        </li>
+        <li>
+          <span class="offer">40-70% OFF</span>
+          <img src="./assets/img/mama-earth.png" alt="todayDeal" />
+          <button class="btn btn-primary">EARN UPTO 5% REWARDS</button>
+        </li>
+        <li>
+          <span class="offer">upto 75% off</span>
+          <img src="./assets/img/nesta.png" alt="todayDeal" />
+          <button class="btn btn-primary">EARN UPTO 5% REWARDS</button>
+        </li>
+        <li>
+          <span class="offer"> 25% OFF Code </span>
+          <img src="./assets/img/amazon.png" alt="todayDeal" />
+          <button class="btn btn-primary">EARN UPTO 5% REWARDS</button>
+        </li>
+        <li>
+          <span class="offer">Any 3 AT <i class="fa-solid fa-indian-rupee-sign"></i>1399</span>
+          <img src="./assets/img/booking.jpg" alt="todayDeal" />
+          <button class="btn btn-primary">EARN UPTO 5% REWARDS</button>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="webInfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="wpb_wrapper">
+            <img src="./assets/img/deals.png" alt="deals" />
+            <div>
+              <h3>Deals & Coupons</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi vel vero cum doloribus tempore ab,
+              </p>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
+        </div>
+        <div class="col-md-4">
+          <div class="wpb_wrapper">
+            <img src="./assets/img/bestOffer.png" alt="Find Best Offers" />
+            <div>
+              <h3>Find Best Offers</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi vel vero cum doloribus tempore ab,
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="wpb_wrapper">
+            <img src="./assets/img/money.png" alt="Save Money" />
+            <div>
+              <h3>Save Money</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi vel vero cum doloribus tempore ab,
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- top categories -->
-    <section class="topCategoriesSlider">
-      <div class="container">
-        <h1 class="sectionTitle">Top Categories</h1>
-        <div class="swiper topCategoriesSwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <a href="#">
-                <img src="./assets/img/travel.png" alt="travel;" />
-
-                <h2>Travel</h2>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#">
-                <img src="./assets/img/food.png" alt="food" />
-                <h2>Food</h2>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#">
-                <img src="./assets/img/electronics.png" alt="electronics" />
-                <h2>Electronics</h2>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#">
-                <img src="./assets/img/fashion.png" alt="fashion" />
-                <h2>Fashion</h2>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#">
-                <img src="./assets/img/bankOffer.png" alt="bank Offer" />
-                <h2>Bank Offer</h2>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#">
-                <img src="./assets/img/personalCare.png" alt="personalCare" />
-                <h2>Personal Care</h2>
-              </a>
+  <!-- Mobile Deals -->
+  <section class="allTypeDeals">
+    <div class="container">
+      <h1 class="sectionTitle">Mobile Deals</h1>
+      <div class="swiper delas">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">AmaZon Offer</span>
+              <img src="./assets/img/mobiles/iqoo-z7s.jpg" alt="travel;" />
+              <h2>
+                iQOO Z7s 5G by vivo at Rs 17499 (After Rs 1500 SBI Credit
+                Card)
+              </h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>23999
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>17499
+                </span>
+              </div>
+              <button class="btn btn-primary">Get This Deal</button>
             </div>
           </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">AmaZon Offer</span>
+              <img src="./assets/img/mobiles/nver-settle-oneplus.jpg" alt="travel;" />
+              <h2>
+                OnePlus 11 5G (8 GB RAM + 128 GB Storage) at Rs 56,999 + Rs.
+                10000 Off on Base Exchange + Rs. 2000 Bank Discount
+              </h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>69999
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>56999
+                </span>
+              </div>
+              <button class="btn btn-primary">Get This Deal</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">Flipkart Offer</span>
+              <img src="./assets/img/mobiles/oneplus-10r-offer-21-06-2023.jpeg" alt="travel;" />
+              <h2>
+                OnePlus 10R 5G (8GB/128 GB ) at Rs 28,999 + (After Rs 3k
+                Coupon off + Rs 3k off on ICICI CC)
+              </h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>39999
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>30499
+                </span>
+              </div>
+              <button class="btn btn-primary">Get This Deal</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">Vijay Sales Offer</span>
+              <img src="./assets/img/mobiles/oneplus-3-lite.jpg" alt="travel;" />
+              <h2>
+                OnePlus Nord CE 3 Lite 5G at Rs 19999 + 5% Off for Amazon
+                ICICI Card Users
+              </h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>21999
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>18999
+                </span>
+              </div>
+              <button class="btn btn-primary">Get This Deal</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">AmaZon Offer</span>
+              <img src="./assets/img/mobiles/redmi-note.jpg" alt="travel;" />
+              <h2>
+                Redmi Note 12 5G Starting at Rs.14999 (After Rs 2000 HDFC Bank
+                Discount) + Rs. 2K + 2K extra off as Base Exchange Bonus
+              </h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>19999
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>13999
+                </span>
+              </div>
+              <button class="btn btn-primary">Get This Deal</button>
+            </div>
+          </div>
         </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- todays top deals -->
-    <section class="todayTopDeals">
-      <div class="container">
-        <h1 class="sectionTitle">Todays top deal</h1>
-        <ul class="todayDeal">
-          <li>
-            <span class="offer"> 25% OFF Code </span>
-            <img src="./assets/img/amazon.png" alt="todayDeal" />
-            <button class="btn btn-primary">EARN UPTO 5% REWARDS</button>
-          </li>
-          <li>
-            <span class="offer"
-              >Any 3 AT <i class="fa-solid fa-indian-rupee-sign"></i>1399</span
-            >
-            <img src="./assets/img/booking.jpg" alt="todayDeal" />
-            <button class="btn btn-primary">EARN UPTO 5% REWARDS</button>
-          </li>
-          <li>
-            <span class="offer">10% OFF Code</span>
-            <img src="./assets/img/colgate.jpg" alt="todayDeal" />
-            <button class="btn btn-primary">EARN UPTO 5% REWARDS</button>
-          </li>
-          <li>
-            <span class="offer">Flat 40% off</span>
-            <img src="./assets/img/hm.png" alt="todayDeal" />
-            <button class="btn btn-primary">EARN UPTO 5% REWARDS</button>
-          </li>
-          <li>
-            <span class="offer">20% off Code</span>
-            <img
-              src="./assets/img/nykaafashion-coupons-1653563244.png"
-              alt="todayDeal"
-            />
-            <button class="btn btn-primary">EARN UPTO 5% REWARDS</button>
-          </li>
-          <li>
-            <span class="offer">OMG</span>
-            <img src="./assets/img/myntra.png" alt="todayDeal" />
-            <button class="btn btn-primary">EARN UPTO 5% REWARDS</button>
-          </li>
-          <li>
-            <span class="offer">40-70% OFF</span>
-            <img src="./assets/img/mama-earth.png" alt="todayDeal" />
-            <button class="btn btn-primary">EARN UPTO 5% REWARDS</button>
-          </li>
-          <li>
-            <span class="offer">upto 75% off</span>
-            <img src="./assets/img/nesta.png" alt="todayDeal" />
-            <button class="btn btn-primary">EARN UPTO 5% REWARDS</button>
-          </li>
-          <li>
-            <span class="offer"> 25% OFF Code </span>
-            <img src="./assets/img/amazon.png" alt="todayDeal" />
-            <button class="btn btn-primary">EARN UPTO 5% REWARDS</button>
-          </li>
-          <li>
-            <span class="offer"
-              >Any 3 AT <i class="fa-solid fa-indian-rupee-sign"></i>1399</span
-            >
-            <img src="./assets/img/booking.jpg" alt="todayDeal" />
-            <button class="btn btn-primary">EARN UPTO 5% REWARDS</button>
-          </li>
-        </ul>
+  <!-- fashion deals -->
+  <section class="allTypeDeals">
+    <div class="container">
+      <h1 class="sectionTitle">Fashion Deals</h1>
+      <div class="swiper delas">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">Adidas Offer</span>
+              <img src="./assets/img/fashion/adidas-clothing-11-08-2020.jpg" alt="travel;" />
+              <h2>
+                Adidas End Of Season Sale: Upto 50% Off + Sign Up & Get Extra
+                ...
+              </h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>999
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>499
+                </span>
+              </div>
+              <button class="btn btn-primary">Get This Deal</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <span class="platform"> BiBA</span>
+              <img src="./assets/img/fashion/bibawomen-12082019.jpg" alt="travel;" />
+              <h2>
+                Flat 50% OFF on BIBA Women's Clothing + Extra 5% Coupon off
+                'E...
+              </h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>2499
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>1499
+                </span>
+              </div>
+              <button class="btn btn-primary">Get This Deal</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">Clovia Offer</span>
+              <img src="./assets/img/fashion/cloviawomenshorts.jpg" alt="travel" />
+              <h2>
+                Up to 80% Off on Women's Innerwear at Clovia (Bra, Shorts,
+                Bri...)
+              </h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>1599
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>799
+                </span>
+              </div>
+              <button class="btn btn-primary">Get This Deal</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">Mufti Offer</span>
+              <img src="./assets/img/fashion/muff-tshrt.jpg" alt="travel;" />
+              <h2>
+                Mufti T-shirts Starting at Rs 560 + Flat 15% GP Cashback
+              </h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>1199
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>560
+                </span>
+              </div>
+              <button class="btn btn-primary">Get This Deal</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">Myntra Offer</span>
+              <img src="./assets/img/fashion/NewProject.jpeg" alt="travel;" />
+              <h2>Minimum 40% Off on Men's Footwear</h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>1390
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>390
+                </span>
+              </div>
+              <button class="btn btn-primary">Get This Deal</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">Cultsport Offer</span>
+              <img src="./assets/img/fashion/kids-clothing-myntra.jpg" alt="travel;" />
+              <h2>
+                Cultsport Woman Crop Sweatshirt at Rs 1104 & Get Flat Rs.340
+                G...
+              </h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>1140
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>340
+                </span>
+              </div>
+              <button class="btn btn-primary">Get This Deal</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">AmaZon Offer</span>
+              <img src="./assets/img/fashion/Sweatshirt-cult.jpg" alt="travel;" />
+              <h2>
+                OnePlus Nord CE 3 Lite 5G at Rs 19999 + 5% Off for Amazon
+                ICICI Card Users
+              </h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>21999
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>18999
+                </span>
+              </div>
+              <button class="btn btn-primary">Get This Deal</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="webInfo">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="wpb_wrapper">
-              <img src="./assets/img/deals.png" alt="deals" />
-              <div>
-                <h3>Deals & Coupons</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Commodi vel vero cum doloribus tempore ab,
-                </p>
+  <!-- Home and kitchen -->
+  <section class="allTypeDeals">
+    <div class="container">
+      <h1 class="sectionTitle">Home and kitchen</h1>
+      <div class="swiper delas">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">AmaZon Offer</span>
+              <img src="./assets/img/kitchen/amazon-kitchen-store-offer-28-04-2023-0a-.jpg" alt="travel;" />
+              <h2>
+                Home & Kitchen Product Starting from Rs.98 + Extra 5% Amazon
+                Pay Cash for Prime Users (Collect offer)
+              </h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>1499
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>699
+                </span>
               </div>
+              <button class="btn btn-primary">Get This Deal</button>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="wpb_wrapper">
-              <img src="./assets/img/bestOffer.png" alt="Find Best Offers" />
-              <div>
-                <h3>Find Best Offers</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Commodi vel vero cum doloribus tempore ab,
-                </p>
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">AmaZon Offer</span>
+              <img src="./assets/img/kitchen/amazon-offer-home-kitchen-04.jpg" alt="travel;" />
+              <h2>
+                Upto 70% off + Extra 5% Amazon Pay Cash (Collect offer) on
+                Home & Kitchen
+              </h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>1499
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>399
+                </span>
               </div>
+              <button class="btn btn-primary">Get This Deal</button>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="wpb_wrapper">
-              <img src="./assets/img/money.png" alt="Save Money" />
-              <div>
-                <h3>Save Money</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Commodi vel vero cum doloribus tempore ab,
-                </p>
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">Flipkart Offer</span>
+              <img src="./assets/img/kitchen/croma-300523.jpg" alt="travel;" />
+              <h2>
+                Flat 60% Off on Croma 250 Watt 6 Speed Hand Mixer with 4
+                Attachments
+              </h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>2500
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>960
+                </span>
               </div>
+              <button class="btn btn-primary">Get This Deal</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">Vijay Sales Offer</span>
+              <img src="./assets/img/kitchen/din-set.jpg" alt="travel;" />
+              <h2>
+                Upto 50% off on DIning Sets at Pepperfry + Free Shipping
+              </h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>390
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>260
+                </span>
+              </div>
+              <button class="btn btn-primary">Get This Deal</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">AmaZon Offer</span>
+              <img src="./assets/img/kitchen/havells-fan.jpg" alt="travel;" />
+              <h2>
+                OnePlus Nord CE 3 Lite 5G at Rs 19999 + 5% Off for Amazon
+                ICICI Card Users
+              </h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>21999
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>18999
+                </span>
+              </div>
+              <button class="btn btn-primary">Get This Deal</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">AmaZon Offer</span>
+              <img src="./assets/img/kitchen/home-kitchen-products-2.jpg" alt="travel;" />
+              <h2>
+                Apply 700 Off Coupon : Havells 1200mm Remote Control Ceiling
+                Fan @ 3448
+              </h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>6900
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>3560
+                </span>
+              </div>
+              <button class="btn btn-primary">Get This Deal</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">AmaZon Offer</span>
+              <img src="./assets/img/kitchen/kitchen-appliance.jpg" alt="travel;" />
+              <h2>Flash Deals on Home & Kitchen</h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>1500
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>610
+                </span>
+              </div>
+              <button class="btn btn-primary">Get This Deal</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">AmaZon Offer</span>
+              <img src="./assets/img/kitchen/life-long.jpg" alt="travel;" />
+              <h2>Upto 20% off on Pepperfry Appliances & Zero Cost EMI</h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>1999
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>1720
+                </span>
+              </div>
+              <button class="btn btn-primary">Get This Deal</button>
             </div>
           </div>
         </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Mobile Deals -->
-    <section class="allTypeDeals">
-      <div class="container">
-        <h1 class="sectionTitle">Mobile Deals</h1>
-        <div class="swiper delas">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">AmaZon Offer</span>
-                <img src="./assets/img/mobiles/iqoo-z7s.jpg" alt="travel;" />
-                <h2>
-                  iQOO Z7s 5G by vivo at Rs 17499 (After Rs 1500 SBI Credit
-                  Card)
-                </h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>23999
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>17499
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
+  <!-- Personal care -->
+  <section class="allTypeDeals">
+    <div class="container">
+      <h1 class="sectionTitle">Personal care</h1>
+      <div class="swiper delas">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">Mcaffeine Offer</span>
+              <img src="./assets/img/personalCare/mcaffe.jpg" alt="travel;" />
+              <h2>Buy 3 Pay For 2 on Mcaffeine Products (Use Code: B3P2)</h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>1499
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>868
+                </span>
               </div>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">AmaZon Offer</span>
-                <img
-                  src="./assets/img/mobiles/nver-settle-oneplus.jpg"
-                  alt="travel;"
-                />
-                <h2>
-                  OnePlus 11 5G (8 GB RAM + 128 GB Storage) at Rs 56,999 + Rs.
-                  10000 Off on Base Exchange + Rs. 2000 Bank Discount
-                </h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>69999
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>56999
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">Flipkart Offer</span>
-                <img
-                  src="./assets/img/mobiles/oneplus-10r-offer-21-06-2023.jpeg"
-                  alt="travel;"
-                />
-                <h2>
-                  OnePlus 10R 5G (8GB/128 GB ) at Rs 28,999 + (After Rs 3k
-                  Coupon off + Rs 3k off on ICICI CC)
-                </h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>39999
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>30499
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">Vijay Sales Offer</span>
-                <img
-                  src="./assets/img/mobiles/oneplus-3-lite.jpg"
-                  alt="travel;"
-                />
-                <h2>
-                  OnePlus Nord CE 3 Lite 5G at Rs 19999 + 5% Off for Amazon
-                  ICICI Card Users
-                </h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>21999
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>18999
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">AmaZon Offer</span>
-                <img src="./assets/img/mobiles/redmi-note.jpg" alt="travel;" />
-                <h2>
-                  Redmi Note 12 5G Starting at Rs.14999 (After Rs 2000 HDFC Bank
-                  Discount) + Rs. 2K + 2K extra off as Base Exchange Bonus
-                </h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>19999
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>13999
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
+              <button class="btn btn-primary">Get This Deal</button>
             </div>
           </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">Nykaa Beauty Offer</span>
+              <img src="./assets/img/personalCare/nykaa.jpg" alt="travel;" />
+              <h2>Nykaa Sale: Upto 50% Off on Top Beauty Brands</h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>449
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>249
+                </span>
+              </div>
+              <button class="btn btn-primary">Get This Deal</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">Plum Offer</span>
+              <img src="./assets/img/personalCare/plumgoodnesssale.jpg" alt="travel;" />
+              <h2>
+                Plum Offer: Flat 50% off on Sitewide + Flat 14% GP cashback
+              </h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>885
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>531
+                </span>
+              </div>
+              <button class="btn btn-primary">Get This Deal</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">Wow Offer</span>
+              <img src="./assets/img/personalCare/wow.jpg" alt="travel;" />
+              <h2>
+                WOW Ubtan Face Serum at Rs 479 After Coupon (WOW20) + 5% Off
+                on Prepaid
+              </h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>579
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>479
+                </span>
+              </div>
+              <button class="btn btn-primary">Get This Deal</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">The Derma Co Offer</span>
+              <img src="./assets/img/personalCare/DermaSale.jpg" alt="travel;" />
+              <h2>
+                Derma Sale: Flat Rs 300 Cashback on all order above Rs 699
+                (Use Code: CB300)
+              </h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>699
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>399
+                </span>
+              </div>
+              <button class="btn btn-primary">Get This Deal</button>
+            </div>
+          </div>
         </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- fashion deals -->
-    <section class="allTypeDeals">
-      <div class="container">
-        <h1 class="sectionTitle">Fashion Deals</h1>
-        <div class="swiper delas">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">Adidas Offer</span>
-                <img
-                  src="./assets/img/fashion/adidas-clothing-11-08-2020.jpg"
-                  alt="travel;"
-                />
-                <h2>
-                  Adidas End Of Season Sale: Upto 50% Off + Sign Up & Get Extra
-                  ...
-                </h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>999
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>499
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <span class="platform"> BiBA</span>
-                <img
-                  src="./assets/img/fashion/bibawomen-12082019.jpg"
-                  alt="travel;"
-                />
-                <h2>
-                  Flat 50% OFF on BIBA Women's Clothing + Extra 5% Coupon off
-                  'E...
-                </h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>2499
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>1499
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">Clovia Offer</span>
-                <img
-                  src="./assets/img/fashion/cloviawomenshorts.jpg"
-                  alt="travel"
-                />
-                <h2>
-                  Up to 80% Off on Women's Innerwear at Clovia (Bra, Shorts,
-                  Bri...)
-                </h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>1599
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>799
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">Mufti Offer</span>
-                <img src="./assets/img/fashion/muff-tshrt.jpg" alt="travel;" />
-                <h2>
-                  Mufti T-shirts Starting at Rs 560 + Flat 15% GP Cashback
-                </h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>1199
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>560
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">Myntra Offer</span>
-                <img src="./assets/img/fashion/NewProject.jpeg" alt="travel;" />
-                <h2>Minimum 40% Off on Men's Footwear</h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>1390
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>390
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">Cultsport Offer</span>
-                <img
-                  src="./assets/img/fashion/kids-clothing-myntra.jpg"
-                  alt="travel;"
-                />
-                <h2>
-                  Cultsport Woman Crop Sweatshirt at Rs 1104 & Get Flat Rs.340
-                  G...
-                </h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>1140
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>340
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">AmaZon Offer</span>
-                <img
-                  src="./assets/img/fashion/Sweatshirt-cult.jpg"
-                  alt="travel;"
-                />
-                <h2>
-                  OnePlus Nord CE 3 Lite 5G at Rs 19999 + 5% Off for Amazon
-                  ICICI Card Users
-                </h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>21999
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>18999
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
+  <!-- exclusive  -->
+  <section class="exclusive_wrapper">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+        <h1 class="sectionTitle">Exclusive Deals</h1>
+        <a href="#" class="btn btn-link">View All</a>
       </div>
-    </section>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="exclusive_item">
+            <div class="exclusive_image" style="background-color: #ffd7d8">
+              <img src="./assets/img/Exclusive/abhibus-coupon-codes-2.png" alt="exclusive image" />
+            </div>
+            <div class="exclusive_content">
+              <span class="platform">Abhibus</span>
 
-    <!-- Home and kitchen -->
-    <section class="allTypeDeals">
-      <div class="container">
-        <h1 class="sectionTitle">Home and kitchen</h1>
-        <div class="swiper delas">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">AmaZon Offer</span>
-                <img
-                  src="./assets/img/kitchen/amazon-kitchen-store-offer-28-04-2023-0a-.jpg"
-                  alt="travel;"
-                />
-                <h2>
-                  Home & Kitchen Product Starting from Rs.98 + Extra 5% Amazon
-                  Pay Cash for Prime Users (Collect offer)
-                </h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>1499
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>699
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">AmaZon Offer</span>
-                <img
-                  src="./assets/img/kitchen/amazon-offer-home-kitchen-04.jpg"
-                  alt="travel;"
-                />
-                <h2>
-                  Upto 70% off + Extra 5% Amazon Pay Cash (Collect offer) on
-                  Home & Kitchen
-                </h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>1499
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>399
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">Flipkart Offer</span>
-                <img
-                  src="./assets/img/kitchen/croma-300523.jpg"
-                  alt="travel;"
-                />
-                <h2>
-                  Flat 60% Off on Croma 250 Watt 6 Speed Hand Mixer with 4
-                  Attachments
-                </h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>2500
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>960
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">Vijay Sales Offer</span>
-                <img src="./assets/img/kitchen/din-set.jpg" alt="travel;" />
-                <h2>
-                  Upto 50% off on DIning Sets at Pepperfry + Free Shipping
-                </h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>390
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>260
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">AmaZon Offer</span>
-                <img src="./assets/img/kitchen/havells-fan.jpg" alt="travel;" />
-                <h2>
-                  OnePlus Nord CE 3 Lite 5G at Rs 19999 + 5% Off for Amazon
-                  ICICI Card Users
-                </h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>21999
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>18999
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">AmaZon Offer</span>
-                <img
-                  src="./assets/img/kitchen/home-kitchen-products-2.jpg"
-                  alt="travel;"
-                />
-                <h2>
-                  Apply 700 Off Coupon : Havells 1200mm Remote Control Ceiling
-                  Fan @ 3448
-                </h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>6900
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>3560
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">AmaZon Offer</span>
-                <img
-                  src="./assets/img/kitchen/kitchen-appliance.jpg"
-                  alt="travel;"
-                />
-                <h2>Flash Deals on Home & Kitchen</h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>1500
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>610
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">AmaZon Offer</span>
-                <img src="./assets/img/kitchen/life-long.jpg" alt="travel;" />
-                <h2>Upto 20% off on Pepperfry Appliances & Zero Cost EMI</h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>1999
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>1720
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Personal care -->
-    <section class="allTypeDeals">
-      <div class="container">
-        <h1 class="sectionTitle">Personal care</h1>
-        <div class="swiper delas">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">Mcaffeine Offer</span>
-                <img src="./assets/img/personalCare/mcaffe.jpg" alt="travel;" />
-                <h2>Buy 3 Pay For 2 on Mcaffeine Products (Use Code: B3P2)</h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>1499
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>868
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">Nykaa Beauty Offer</span>
-                <img src="./assets/img/personalCare/nykaa.jpg" alt="travel;" />
-                <h2>Nykaa Sale: Upto 50% Off on Top Beauty Brands</h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>449
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>249
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">Plum Offer</span>
-                <img
-                  src="./assets/img/personalCare/plumgoodnesssale.jpg"
-                  alt="travel;"
-                />
-                <h2>
-                  Plum Offer: Flat 50% off on Sitewide + Flat 14% GP cashback
-                </h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>885
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>531
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">Wow Offer</span>
-                <img src="./assets/img/personalCare/wow.jpg" alt="travel;" />
-                <h2>
-                  WOW Ubtan Face Serum at Rs 479 After Coupon (WOW20) + 5% Off
-                  on Prepaid
-                </h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>579
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>479
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">The Derma Co Offer</span>
-                <img
-                  src="./assets/img/personalCare/DermaSale.jpg"
-                  alt="travel;"
-                />
-                <h2>
-                  Derma Sale: Flat Rs 300 Cashback on all order above Rs 699
-                  (Use Code: CB300)
-                </h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>699
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>399
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- exclusive  -->
-    <section class="exclusive_wrapper">
-      <div class="container">
-        <div class="d-flex align-items-center justify-content-between">
-          <h1 class="sectionTitle">Exclusive Deals</h1>
-          <a href="#" class="btn btn-link">View All</a>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div class="exclusive_item">
-              <div class="exclusive_image" style="background-color: #ffd7d8">
-                <img
-                  src="./assets/img/Exclusive/abhibus-coupon-codes-2.png"
-                  alt="exclusive image"
-                />
-              </div>
-              <div class="exclusive_content">
-                <span class="platform">Abhibus</span>
-
-                <h3>
-                  Instant 15% Off On Bus Tickets + Extra Rs.150 CB (New Users)
-                </h3>
-                <button class="btn btn-primary">Get Code</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="exclusive_item">
-              <div class="exclusive_image" style="background-color: #ffd2de">
-                <img
-                  src="./assets/img/Exclusive/altbalaji-coupon-codes.png"
-                  alt="exclusive image"
-                />
-              </div>
-              <div class="exclusive_content">
-                <span class="platform">Altbalaji</span>
-                <h3>
-                  Yearly Plan – Flat 10% Off On Alt Balaji Yearly Plan At Rs.270
-                  Only
-                </h3>
-                <button class="btn btn-primary">Get Code</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="exclusive_item">
-              <div class="exclusive_image" style="background-color: #f7e3ff">
-                <img
-                  src="./assets/img/Exclusive/faasos-coupon-codes.png"
-                  alt="exclusive image"
-                />
-              </div>
-              <div class="exclusive_content">
-                <span class="platform">Faasos</span>
-                <h3>
-                  Exclusive Offer – Flat 60% Off (Upto Rs.120) On Min Order Of
-                  Rs.199 & Above
-                </h3>
-                <button class="btn btn-primary">Get Code</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="exclusive_item">
-              <div class="exclusive_image" style="background-color: #231616">
-                <img
-                  src="./assets/img/Exclusive/fastrack-coupon-codes.png"
-                  alt="exclusive image"
-                />
-              </div>
-              <div class="exclusive_content">
-                <span class="platform">Fastrack</span>
-                <h3>
-                  Sitewide Offer – Upto 50% Off + Extra 10% (Upto Rs.1000) Off
-                  On Min Order Rs.2249
-                </h3>
-                <button class="btn btn-primary">Get Code</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="exclusive_item">
-              <div class="exclusive_image" style="background-color: #c2e1f5">
-                <img
-                  src="./assets/img/Exclusive/OliveBoard-coupon-codes-.png"
-                  alt="exclusive image"
-                />
-              </div>
-              <div class="exclusive_content">
-                <span class="platform">OliveBoard</span>
-                <h3>
-                  Exclusive Offer – Upto 60% Off On UPSC, Banking, SSC,
-                  Railways, Agriculture Exam
-                </h3>
-                <button class="btn btn-primary">Get Code</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="exclusive_item">
-              <div class="exclusive_image" style="background-color: #d4f1c4">
-                <img
-                  src="./assets/img/Exclusive/zoomcar-coupon-codes-1.png"
-                  alt="exclusive image"
-                />
-              </div>
-              <div class="exclusive_content">
-                <span class="platform">Zoomcar</span>
-                <h3>
-                  Exclusive Offer – Flat 15% Off + Rs.500 Cashback (Z-Points) On
-                  First Self Drive Car Booking
-                </h3>
-                <button class="btn btn-primary">Get Code</button>
-              </div>
+              <h3>
+                Instant 15% Off On Bus Tickets + Extra Rs.150 CB (New Users)
+              </h3>
+              <button class="btn btn-primary">Get Code</button>
             </div>
           </div>
         </div>
-        <div class="text-center mt-4"></div>
-      </div>
-    </section>
-
-    <!-- Mobile Deals -->
-    <section class="allTypeDeals">
-      <div class="container">
-        <h1 class="sectionTitle">Hot Deals Of The Day</h1>
-        <div class="swiper delas">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">AmaZon Offer</span>
-                <img src="./assets/img/mobiles/iqoo-z7s.jpg" alt="travel;" />
-                <h2>
-                  iQOO Z7s 5G by vivo at Rs 17499 (After Rs 1500 SBI Credit
-                  Card)
-                </h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>23999
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>17499
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
+        <div class="col-md-4">
+          <div class="exclusive_item">
+            <div class="exclusive_image" style="background-color: #ffd2de">
+              <img src="./assets/img/Exclusive/altbalaji-coupon-codes.png" alt="exclusive image" />
             </div>
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">Wow Offer</span>
-                <img src="./assets/img/personalCare/wow.jpg" alt="travel;" />
-                <h2>
-                  WOW Ubtan Face Serum at Rs 479 After Coupon (WOW20) + 5% Off
-                  on Prepaid
-                </h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>579
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>479
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">AmaZon Offer</span>
-                <img
-                  src="./assets/img/kitchen/amazon-offer-home-kitchen-04.jpg"
-                  alt="travel;"
-                />
-                <h2>
-                  Upto 70% off + Extra 5% Amazon Pay Cash (Collect offer) on
-                  Home & Kitchen
-                </h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>1499
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>399
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">Flipkart Offer</span>
-                <img
-                  src="./assets/img/kitchen/croma-300523.jpg"
-                  alt="travel;"
-                />
-                <h2>
-                  Flat 60% Off on Croma 250 Watt 6 Speed Hand Mixer with 4
-                  Attachments
-                </h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>2500
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>960
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <span class="platform"> BiBA</span>
-                <img
-                  src="./assets/img/fashion/bibawomen-12082019.jpg"
-                  alt="travel;"
-                />
-                <h2>
-                  Flat 50% OFF on BIBA Women's Clothing + Extra 5% Coupon off
-                  'E...
-                </h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>2499
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>1499
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div>
-                <span class="platform">AmaZon Offer</span>
-                <img src="./assets/img/mobiles/redmi-note.jpg" alt="travel;" />
-                <h2>
-                  Redmi Note 12 5G Starting at Rs.14999 (After Rs 2000 HDFC Bank
-                  Discount) + Rs. 2K + 2K extra off as Base Exchange Bonus
-                </h2>
-                <div class="price">
-                  <span class="retularPrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>19999
-                  </span>
-                  <span class="salePrice">
-                    <i class="fa-solid fa-indian-rupee-sign"></i>13999
-                  </span>
-                </div>
-                <button class="btn btn-primary">Get This Deal</button>
-              </div>
+            <div class="exclusive_content">
+              <span class="platform">Altbalaji</span>
+              <h3>
+                Yearly Plan – Flat 10% Off On Alt Balaji Yearly Plan At Rs.270
+                Only
+              </h3>
+              <button class="btn btn-primary">Get Code</button>
             </div>
           </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
         </div>
-      </div>
-    </section>
-
-    <!-- blog section -->
-    <section class="blogSection">
-      <div class="container">
-        <div class="d-flex align-items-center justify-content-between">
-          <h1 class="sectionTitle">Blog</h1>
-          <a href="#" class="btn btn-link">View All</a>
+        <div class="col-md-4">
+          <div class="exclusive_item">
+            <div class="exclusive_image" style="background-color: #f7e3ff">
+              <img src="./assets/img/Exclusive/faasos-coupon-codes.png" alt="exclusive image" />
+            </div>
+            <div class="exclusive_content">
+              <span class="platform">Faasos</span>
+              <h3>
+                Exclusive Offer – Flat 60% Off (Upto Rs.120) On Min Order Of
+                Rs.199 & Above
+              </h3>
+              <button class="btn btn-primary">Get Code</button>
+            </div>
+          </div>
         </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card blogItem">
-              <img
-                src="./assets/img/blog/blog_01.jpg"
-                class="card-img-top"
-                alt="blog"
-              />
-              <span class="date">March 26, 2018</span>
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="#">
-                    Restaurant Employer Read Clients Orders On His Ipad</a
-                  >
-                </h5>
-                <p class="card-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Quae, dignissimos ut. Architecto laborum, nostrum incidunt
-                  numquam omnis perspiciatis neque hic ullam sint explicabo ea,
-                  eligendi, porro error nesciunt. Nam, consectetur?
-                </p>
-                <a href="#" class="btn btn-link">Continue Reading </a>
-              </div>
+        <div class="col-md-4">
+          <div class="exclusive_item">
+            <div class="exclusive_image" style="background-color: #231616">
+              <img src="./assets/img/Exclusive/fastrack-coupon-codes.png" alt="exclusive image" />
+            </div>
+            <div class="exclusive_content">
+              <span class="platform">Fastrack</span>
+              <h3>
+                Sitewide Offer – Upto 50% Off + Extra 10% (Upto Rs.1000) Off
+                On Min Order Rs.2249
+              </h3>
+              <button class="btn btn-primary">Get Code</button>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card blogItem">
-              <img
-                src="./assets/img/blog/blog_02.jpg"
-                class="card-img-top"
-                alt="blog"
-              />
-              <span class="date">March 26, 2018</span>
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="#">
-                    English Breakfast Tea With Tasty Donut Desserts</a
-                  >
-                </h5>
-                <p class="card-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Quae, dignissimos ut. Architecto laborum, nostrum incidunt
-                  numquam omnis perspiciatis neque hic ullam sint explicabo ea,
-                  eligendi, porro error nesciunt. Nam, consectetur?
-                </p>
-                <a href="#" class="btn btn-link">Continue Reading </a>
-              </div>
+        </div>
+        <div class="col-md-4">
+          <div class="exclusive_item">
+            <div class="exclusive_image" style="background-color: #c2e1f5">
+              <img src="./assets/img/Exclusive/OliveBoard-coupon-codes-.png" alt="exclusive image" />
+            </div>
+            <div class="exclusive_content">
+              <span class="platform">OliveBoard</span>
+              <h3>
+                Exclusive Offer – Upto 60% Off On UPSC, Banking, SSC,
+                Railways, Agriculture Exam
+              </h3>
+              <button class="btn btn-primary">Get Code</button>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card blogItem">
-              <img
-                src="./assets/img/blog/blog_04.jpg"
-                class="card-img-top"
-                alt="blog"
-              />
-              <span class="date">March 26, 2018</span>
-              <div class="card-body">
-                <h5 class="card-title">
-                  <a href="#">
-                    Amazing Classic Interior Design With Perfect Lighting</a
-                  >
-                </h5>
-                <p class="card-text">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Quae, dignissimos ut. Architecto laborum, nostrum incidunt
-                  numquam omnis perspiciatis neque hic ullam sint explicabo ea,
-                  eligendi, porro error nesciunt. Nam, consectetur?
-                </p>
-                <a href="#" class="btn btn-link">Continue Reading </a>
-              </div>
+        </div>
+        <div class="col-md-4">
+          <div class="exclusive_item">
+            <div class="exclusive_image" style="background-color: #d4f1c4">
+              <img src="./assets/img/Exclusive/zoomcar-coupon-codes-1.png" alt="exclusive image" />
+            </div>
+            <div class="exclusive_content">
+              <span class="platform">Zoomcar</span>
+              <h3>
+                Exclusive Offer – Flat 15% Off + Rs.500 Cashback (Z-Points) On
+                First Self Drive Car Booking
+              </h3>
+              <button class="btn btn-primary">Get Code</button>
             </div>
           </div>
         </div>
       </div>
-    </section>
+      <div class="text-center mt-4"></div>
+    </div>
+  </section>
 
-    <section class="infoSection">
-      <div class="container">
-        <h1>Latest Online Shopping Coupons For Online Stores In India</h1>
+  <!-- Mobile Deals -->
+  <section class="allTypeDeals">
+    <div class="container">
+      <h1 class="sectionTitle">Hot Deals Of The Day</h1>
+      <div class="swiper delas">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">AmaZon Offer</span>
+              <img src="./assets/img/mobiles/iqoo-z7s.jpg" alt="travel;" />
+              <h2>
+                iQOO Z7s 5G by vivo at Rs 17499 (After Rs 1500 SBI Credit
+                Card)
+              </h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>23999
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>17499
+                </span>
+              </div>
+              <button class="btn btn-primary">Get This Deal</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">Wow Offer</span>
+              <img src="./assets/img/personalCare/wow.jpg" alt="travel;" />
+              <h2>
+                WOW Ubtan Face Serum at Rs 479 After Coupon (WOW20) + 5% Off
+                on Prepaid
+              </h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>579
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>479
+                </span>
+              </div>
+              <button class="btn btn-primary">Get This Deal</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">AmaZon Offer</span>
+              <img src="./assets/img/kitchen/amazon-offer-home-kitchen-04.jpg" alt="travel;" />
+              <h2>
+                Upto 70% off + Extra 5% Amazon Pay Cash (Collect offer) on
+                Home & Kitchen
+              </h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>1499
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>399
+                </span>
+              </div>
+              <button class="btn btn-primary">Get This Deal</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">Flipkart Offer</span>
+              <img src="./assets/img/kitchen/croma-300523.jpg" alt="travel;" />
+              <h2>
+                Flat 60% Off on Croma 250 Watt 6 Speed Hand Mixer with 4
+                Attachments
+              </h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>2500
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>960
+                </span>
+              </div>
+              <button class="btn btn-primary">Get This Deal</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <span class="platform"> BiBA</span>
+              <img src="./assets/img/fashion/bibawomen-12082019.jpg" alt="travel;" />
+              <h2>
+                Flat 50% OFF on BIBA Women's Clothing + Extra 5% Coupon off
+                'E...
+              </h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>2499
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>1499
+                </span>
+              </div>
+              <button class="btn btn-primary">Get This Deal</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div>
+              <span class="platform">AmaZon Offer</span>
+              <img src="./assets/img/mobiles/redmi-note.jpg" alt="travel;" />
+              <h2>
+                Redmi Note 12 5G Starting at Rs.14999 (After Rs 2000 HDFC Bank
+                Discount) + Rs. 2K + 2K extra off as Base Exchange Bonus
+              </h2>
+              <div class="price">
+                <span class="retularPrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>19999
+                </span>
+                <span class="salePrice">
+                  <i class="fa-solid fa-indian-rupee-sign"></i>13999
+                </span>
+              </div>
+              <button class="btn btn-primary">Get This Deal</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
 
-        <div class="infoContent">
-          <h3>About CouponzGuru.com</h3>
-          <p>
-            We are one of the leading coupons and daily deals website in India
-            since 2011. Couponzguru is one of the first coupon websites to start
-            in India and we have seen the Indian E-Commerce market grow. We
-            started our journey in 2011 with around 10-15 merchants like
-            Makemytrip, Yatra, Myntra, Snapdeal and few more, since then we have
-            been growing along with Indian E-Commerce Eco System. We are adding
-            new merchants on our website almost daily and the merchant list is
-            growing.At CouponzGuru our utmost priority is our customers and
-            their user experience at our site - We validate and check each and
-            every coupon manually to make sure that correct information is
-            provided to our users.
-          </p>
+  <!-- blog section -->
+  <section class="blogSection">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+        <h1 class="sectionTitle">Blog</h1>
+        <a href="#" class="btn btn-link">View All</a>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card blogItem">
+            <img src="./assets/img/blog/blog_01.jpg" class="card-img-top" alt="blog" />
+            <span class="date">March 26, 2018</span>
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="#">
+                  Restaurant Employer Read Clients Orders On His Ipad</a>
+              </h5>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quae, dignissimos ut. Architecto laborum, nostrum incidunt
+                numquam omnis perspiciatis neque hic ullam sint explicabo ea,
+                eligendi, porro error nesciunt. Nam, consectetur?
+              </p>
+              <a href="#" class="btn btn-link">Continue Reading </a>
+            </div>
+          </div>
         </div>
-        <div class="infoContent">
-          <h3>What We Do?</h3>
-          <p>
-            We help online shoppers to get coupons, deals and offers for all
-            online shopping websites in India at one place. You can call us
-            Coupon & Deals aggregators. We have become a one stop free shop to
-            get all latest, working and genuine coupon codes, promo deals and
-            discount offers in India. Our team of highly skilled coupons and
-            deals hunters are on the job 24 x 7 to hunt for latest money saving
-            coupons and deals. We list all these discount coupons, deals and
-            offers from various online shopping sites in India at CouponzGuru
-            which can be availed freely by you and that surely helps you save a
-            lot of money online. So, now no need to visit every website daily
-            and hunt for discounts, just check out CouponzGuru and you will get
-            the latest deals here. You can also subscribe to our newsletter,
-            where in we send the latest coupons of the day to your inbox
-            directly.
-          </p>
+        <div class="col-md-4">
+          <div class="card blogItem">
+            <img src="./assets/img/blog/blog_02.jpg" class="card-img-top" alt="blog" />
+            <span class="date">March 26, 2018</span>
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="#">
+                  English Breakfast Tea With Tasty Donut Desserts</a>
+              </h5>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quae, dignissimos ut. Architecto laborum, nostrum incidunt
+                numquam omnis perspiciatis neque hic ullam sint explicabo ea,
+                eligendi, porro error nesciunt. Nam, consectetur?
+              </p>
+              <a href="#" class="btn btn-link">Continue Reading </a>
+            </div>
+          </div>
         </div>
-        <div class="infoContent">
-          <h3>How to Use Coupon Codes?</h3>
-          <p>
-            At CouponzGuru, we have coupons and we also have deals. The basic
-            difference is that if there is a coupon code, you need to apply that
-            coupon code at the time of payment at the merchant’s website.
-            However, in case of deals, there is no need of applying the coupon,
-            the discount is automatically provided on meeting the terms and
-            conditions of the deal. So, to use coupon code, just click on “Click
-            to Get Coupon” button and you will be redirected to the merchant’s
-            website in a new tab through an affiliate link. Now add the products
-            you want to buy in your cart and then come back to CouponzGuru in
-            the previous tab; copy the coupon code and apply the same at the
-            merchant’s website. In case of deals, you don’t need to come back to
-            copy the code.
-          </p>
-        </div>
-        <div class="infoContent">
-          <h3>What Kind Of Coupons Are Available?</h3>
-          <p>
-            We have coupon codes and offers for almost all categories related to
-            online shopping, be that Fashion & Accessories, Mobiles,
-            Electronics, Books, Baby Products, Flights, Hotels, Pizza Coupons,
-            Restaurant Deals and much more. We have coupons and deals from wide
-            range of online shopping websites in India – to name top few sites,
-            we have active offers and coupons from sites like Flipkart, Myntra,
-            Jabong, Snapdeal, Yebhi, Dominos, Pizza Hut, Yatra, Makemytrip,
-            Goibibo, Fashionandyou, Firstcry, Babyoye, Zivame, Shoppers Stop and
-            the list goes on. You can check the complete list here. So Looking
-            to buy to buy a cool pair of shoes, a new mobile phone, jewellery
-            for your wife, pens for yours husband or book a flight ticket? We
-            have all for you here at CouponzGuru. Wish you a Very Happy Saving
-            Time ahead!
-          </p>
+        <div class="col-md-4">
+          <div class="card blogItem">
+            <img src="./assets/img/blog/blog_04.jpg" class="card-img-top" alt="blog" />
+            <span class="date">March 26, 2018</span>
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="#">
+                  Amazing Classic Interior Design With Perfect Lighting</a>
+              </h5>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Quae, dignissimos ut. Architecto laborum, nostrum incidunt
+                numquam omnis perspiciatis neque hic ullam sint explicabo ea,
+                eligendi, porro error nesciunt. Nam, consectetur?
+              </p>
+              <a href="#" class="btn btn-link">Continue Reading </a>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- footer -->
-    <footer>
-      <div class="container">
-        <div class="companyLogo">
-          <a href="index.html">
-            <img src="./assets/img/logo-bottom.png" alt="logo" />
+  <section class="infoSection">
+    <div class="container">
+      <h1>Latest Online Shopping Coupons For Online Stores In India</h1>
+
+      <div class="infoContent">
+        <h3>About CouponzGuru.com</h3>
+        <p>
+          We are one of the leading coupons and daily deals website in India
+          since 2011. Couponzguru is one of the first coupon websites to start
+          in India and we have seen the Indian E-Commerce market grow. We
+          started our journey in 2011 with around 10-15 merchants like
+          Makemytrip, Yatra, Myntra, Snapdeal and few more, since then we have
+          been growing along with Indian E-Commerce Eco System. We are adding
+          new merchants on our website almost daily and the merchant list is
+          growing.At CouponzGuru our utmost priority is our customers and
+          their user experience at our site - We validate and check each and
+          every coupon manually to make sure that correct information is
+          provided to our users.
+        </p>
+      </div>
+      <div class="infoContent">
+        <h3>What We Do?</h3>
+        <p>
+          We help online shoppers to get coupons, deals and offers for all
+          online shopping websites in India at one place. You can call us
+          Coupon & Deals aggregators. We have become a one stop free shop to
+          get all latest, working and genuine coupon codes, promo deals and
+          discount offers in India. Our team of highly skilled coupons and
+          deals hunters are on the job 24 x 7 to hunt for latest money saving
+          coupons and deals. We list all these discount coupons, deals and
+          offers from various online shopping sites in India at CouponzGuru
+          which can be availed freely by you and that surely helps you save a
+          lot of money online. So, now no need to visit every website daily
+          and hunt for discounts, just check out CouponzGuru and you will get
+          the latest deals here. You can also subscribe to our newsletter,
+          where in we send the latest coupons of the day to your inbox
+          directly.
+        </p>
+      </div>
+      <div class="infoContent">
+        <h3>How to Use Coupon Codes?</h3>
+        <p>
+          At CouponzGuru, we have coupons and we also have deals. The basic
+          difference is that if there is a coupon code, you need to apply that
+          coupon code at the time of payment at the merchant’s website.
+          However, in case of deals, there is no need of applying the coupon,
+          the discount is automatically provided on meeting the terms and
+          conditions of the deal. So, to use coupon code, just click on “Click
+          to Get Coupon” button and you will be redirected to the merchant’s
+          website in a new tab through an affiliate link. Now add the products
+          you want to buy in your cart and then come back to CouponzGuru in
+          the previous tab; copy the coupon code and apply the same at the
+          merchant’s website. In case of deals, you don’t need to come back to
+          copy the code.
+        </p>
+      </div>
+      <div class="infoContent">
+        <h3>What Kind Of Coupons Are Available?</h3>
+        <p>
+          We have coupon codes and offers for almost all categories related to
+          online shopping, be that Fashion & Accessories, Mobiles,
+          Electronics, Books, Baby Products, Flights, Hotels, Pizza Coupons,
+          Restaurant Deals and much more. We have coupons and deals from wide
+          range of online shopping websites in India – to name top few sites,
+          we have active offers and coupons from sites like Flipkart, Myntra,
+          Jabong, Snapdeal, Yebhi, Dominos, Pizza Hut, Yatra, Makemytrip,
+          Goibibo, Fashionandyou, Firstcry, Babyoye, Zivame, Shoppers Stop and
+          the list goes on. You can check the complete list here. So Looking
+          to buy to buy a cool pair of shoes, a new mobile phone, jewellery
+          for your wife, pens for yours husband or book a flight ticket? We
+          have all for you here at CouponzGuru. Wish you a Very Happy Saving
+          Time ahead!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="companyLogo">
+        <a href="index.html">
+          <img src="./assets/img/logo-bottom.png" alt="logo" />
+        </a>
+      </div>
+      <ul class="fotterMenu">
+        <li>
+          <a href="index.html"> Home </a>
+        </li>
+        <li>
+          <a href="./pages/blog.html"> Blog </a>
+        </li>
+        <li>
+          <a href="./pages/contact-us.html"> Contact us </a>
+        </li>
+        <li>
+          <a href="./pages/privacy-policy.html"> Privacy Policy </a>
+        </li>
+      </ul>
+      <ul class="socialMedia">
+        <li>
+          <a href="#" class="facebook">
+            <i class="fa-brands fa-facebook-f"></i>
           </a>
-        </div>
-        <ul class="fotterMenu">
-          <li>
-            <a href="index.html"> Home </a>
-          </li>
-          <li>
-            <a href="./pages/blog.html"> Blog </a>
-          </li>
-          <li>
-            <a href="./pages/contact-us.html"> Contact us </a>
-          </li>
-          <li>
-            <a href="./pages/privacy-policy.html"> Privacy Policy </a>
-          </li>
-        </ul>
-        <ul class="socialMedia">
-          <li>
-            <a href="#" class="facebook">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="twitter">
-              <i class="fa-brands fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="linkedin">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="pinterest">
-              <i class="fa-brands fa-pinterest-p"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./assets/js/bootstrap.bundle.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.1/swiper-bundle.min.js"
-      integrity="sha512-amT8JUsTgg8svD43Vnz8K+C5Obi5Njn+q2zyVixZrBAU6xk4awXGIQNrVTTZNpJZk8D2hTPOSsLNEHSnSNzv7g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- <script
+        </li>
+        <li>
+          <a href="#" class="twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="linkedin">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="pinterest">
+            <i class="fa-brands fa-pinterest-p"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.1/swiper-bundle.min.js"
+    integrity="sha512-amT8JUsTgg8svD43Vnz8K+C5Obi5Njn+q2zyVixZrBAU6xk4awXGIQNrVTTZNpJZk8D2hTPOSsLNEHSnSNzv7g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- <script
       src="https:/kit.fontawesome.com/cdae6b0ae3.js"
       crossorigin="anonymous"
     ></script> -->
-    <script src="./assets/js/app.js"></script>
-  </body>
+  <script src="./assets/js/app.js"></script>
+</body>
+
 </html>
