@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI} ^/pages/fashion/amazon.html$
+RewriteRule ^(.*)$ $1 [L]

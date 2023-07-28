@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coupon</title>
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.1/swiper-bundle.css"
+      integrity="sha512-l7kpss+EakeeIboLV6JMyXOnym/Ls1WoZ7wiutyGSNbzgTO6AyTSw5Xe5JsRcqR592JBETP/OD6AZREwrAxD2Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="../../assets/css/app.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="mainWrapper">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="../../index.html">
+            <img src="../../assets/img/logo.png" alt="logo" />
+          </a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Travel <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/travel/makemytrip.html"
+                      >Makemytrip</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/travel/cleartrip.html"
+                      >Cleartrip</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/travel/agoda.html"
+                      >Agoda</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/travel/oyo.html"
+                      >Oyo
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/travel/booking-com.html"
+                      >Booking.com
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/travel/goibibo.html"
+                      >Goibibo
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  href="#"
+                >
+                  Food <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="./pages/food/pizzahut.html"
+                      >Pizza hut
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/food/swiggy.html"
+                      >Swiggy
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/food/dominos.html"
+                      >Dominos
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/food/Igp.html"
+                      >Igp
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/food/fnp.html"
+                      >Fnp
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  href="#"
+                  >Electronics <i class="fa-solid fa-chevron-down"></i
+                ></a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/electronics/amazon.html"
+                      >Amazon</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/electronics/flipkart.html"
+                      >Flipkart
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/electronics/croma.html"
+                      >Croma
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/electronics/samsung.html"
+                      >Samsung
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/electronics/boat.html"
+                      >Boat
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/electronics/dell.html"
+                      >Dell
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/electronics/hp.html"
+                      >Hp
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/electronics/lenovo.html"
+                      >Lenovo
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  href="#"
+                  >Fashion and lifestyle
+                  <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="./pages/fashion/ajio.html"
+                      >Ajio
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/fashion/myntra.html"
+                      >Myntra
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/fashion/firstcry.html"
+                      >Firstcry
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/fashion/m&s.html"
+                      >M&S
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/fashion/amazone.html"
+                      >Amazone
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/fashion/flipkart.html"
+                      >Flipkart
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/fashion/zivame.html"
+                      >Zivame
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  href="#"
+                  >Bank offer <i class="fa-solid fa-chevron-down"></i
+                ></a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="#">Axis bank credit card </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Au small finance bank credit card
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Citi bank credit card </a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Sbi </a></li>
+                </ul>
+              </li> -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Personal care <i class="fa-solid fa-chevron-down"></i
+                ></a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/personalcare/wow.html"
+                      >Wow
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/personalcare/mcaffine.html"
+                      >Mcaffine
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/personalcare/plum.html"
+                      >Plum
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/personalcare/beardo.html"
+                      >Beardo
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/personalcare/bsc.html"
+                      >Bsc
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/personalcare/nyka.html"
+                      >Nyka
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/personalcare/kama-ayurveda.html"
+                      >Kama ayurveda
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/personalcare/thebodyshop.html"
+                      >The body shop
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="./pages/personalcare/jiva.html"
+                      >Jiva
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section class="innerTitleSection">
+        <div class="container">
+          <div class="pageTitle">
+            <img
+              src="../../assets/img/amazon-logo-small.jpg"
+              alt="logo"
+              style="display: none"
+            />
+            <h1>Amazon</h1>
+            <p>
+              Amazon Coupons Save more on your Amazon shopping with verified 75 Amazon Promo codes for Jun 2023 . By using these codes, you can enjoy significant discounts on your order amount, free shipping, and more. Whether you are shopping for electronics, mobiles, fashion, home goods, or everyday essentials, Amazon promo codes can help you save extra on your online shopping. You can find all the latest discount coupons on our platform so keep an eye on CouponDunia store page for the latest promo codes, cashback & start saving today.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="couponSection">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="lsitOfuitens">
+                <div class="offer-card">
+                  <div class="offer-card-main">
+                    <div class="offer-details">
+                      <div class="Verified">
+                        <i class="fa fa-check-circle"></i> Verified
+                      </div>
+                      <h1>90% Off Fashion</h1>
+                      <p>
+                        Upto 90% Off On Apparel, Footwear, Bags, Sunglasses,
+                        Watches & M
+                      </p>
+                    </div>
+
+                    <button class="btn btn-primary btnPassData">
+                      <!-- <div class="couponCode">Deal Activated</div> -->
+                      <div class="couponText">Get the Deal</div>
+                    </button>
+                    <a
+                      href="https://www.amazon.in/Hisense-inches-Certified-Android-32A4G/dp/B099JHLQX8/?_encoding=UTF8&pd_rd_w=4DGOx&content-id=amzn1.sym.e5c03be3-10ba-4bc8-b9be-6fcea12320ed%3Aamzn1.symc.adba8a53-36db-43df-a081-77d28e1b71e6&pf_rd_p=e5c03be3-10ba-4bc8-b9be-6fcea12320ed&pf_rd_r=D8G1QKB57GYB12VNFQ1K&pd_rd_wg=0ZKp2&pd_rd_r=1e611f43-e994-400d-8cdd-02c4536b02a6&ref_=pd_gw_ci_mcx_mr_hp_atf_m"
+                    ></a>
+                  </div>
+                  <div class="offer-card-bottom">
+                    <button
+                      class="btn btn-link showContent"
+                      onclick="myFunction()"
+                    >
+                      Show Detail <i class="fa fa-chevron-down"></i>
+                    </button>
+                    <div class="bottomContent">
+                      <ul>
+                        <li>
+                          Avail discount of upto 90% on top brands like Levi's,
+                          Jack & Jones, Peter England, Puma, Reebok, Lavie,
+                          Mochi, Catwalk, UCB, American Tourister, HRX, Bata,
+                          Fastrack, Sonata, Casio, Fossil, ONLY, Van Heusen,
+                          Wrangler, Vincent Chase, Aviator and more.
+                        </li>
+                        <li>No Flipkart voucher code required.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="offer-card">
+                  <div class="offer-card-main">
+                    <div class="offer-details">
+                      <div class="Verified">
+                        <i class="fa fa-check-circle"></i> Verified
+                      </div>
+                      <h1>60% Off Mobiles</h1>
+                      <p>Upto 60% Off On Best-Selling Mobiles</p>
+                    </div>
+                    <button class="btn btn-primary btnPassData">
+                      <!-- <div class="couponCode">Deal Activated</div> -->
+                      <div class="couponText">Get the Deal</div>
+                    </button>
+                    <a
+                      href="https://www.amazon.in/rts-Universal-International-Worldwide-Countries/dp/B09B9RR81Y?ref_=Oct_DLandingS_D_aef52836_1"
+                    ></a>
+                  </div>
+                  <div class="offer-card-bottom">
+                    <button class="btn btn-link showContent">
+                      Show Detail <i class="fa fa-chevron-down"></i>
+                    </button>
+                    <div class="bottomContent">
+                      <ul>
+                        <li>Save upto 60% on best-selling mobile phones.</li>
+                        <li>
+                          Discount is available on Redmi 10, Samsung A14, realme
+                          Narzo 50A, POCO M3, Oppo A53s, Apple iPhone 12, Vivo
+                          T1 Pro, Infinix Hot 20 Play, Oppo Reno 8T, POCO M4,
+                          Moto G73, iphone SE, sSamsung Galaxy F13 and so on.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+            <div class="col-md-4">
+              <img
+                class="img-fluid"
+                src="../../assets/img/flipkart-grocery-upto-50-savings-flipkart-quick-90-minute-delivery-ad-times-of-india-bangalore-10-7-2021.png"
+                alt="ads"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="companyLogo">
+          <a href="index.html">
+            <img src="../../assets/img/logo-bottom.png" alt="logo" />
+          </a>
+        </div>
+        <ul class="fotterMenu">
+          <li>
+            <a href="index.html"> Home </a>
+          </li>
+          <li>
+            <a href="./pages/blog.html"> Blog </a>
+          </li>
+          <li>
+            <a href="./pages/contact-us.html"> Contact us </a>
+          </li>
+          <li>
+            <a href="./pages/privacy-policy.html"> Privacy Policy </a>
+          </li>
+        </ul>
+        <ul class="socialMedia">
+          <li>
+            <a href="#" class="facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="twitter">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="linkedin">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="pinterest">
+              <i class="fa-brands fa-pinterest-p"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+          <div class="modal-body">
+            <div class="aboutPage">
+              <img
+                src="../../assets/img/makemytrip-logo-small.jpg"
+                alt="logo"
+              />
+              <div>
+                <h1 class="titleNew"></h1>
+                <p class="content"></p>
+              </div>
+            </div>
+
+            <div class="couponWrapper">
+              <div class="offerCode">
+                <div class="couponInfo">
+                  <h1 class="Code"></h1>
+                  <div class="spinner">
+                    <i class="fa fa-spinner fa-spin"></i>
+                  </div>
+                </div>
+                <button class="btn btn-primary">Copy Code</button>
+              </div>
+              <p>
+                <a class="anchor" target="_blank" href="#">View Site</a> and
+                paste your code at checkout
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../../assets/js/bootstrap.bundle.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.1/swiper-bundle.min.js"
+      integrity="sha512-amT8JUsTgg8svD43Vnz8K+C5Obi5Njn+q2zyVixZrBAU6xk4awXGIQNrVTTZNpJZk8D2hTPOSsLNEHSnSNzv7g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../../assets/js/app.js"></script>
+    <script>
+     
+    </script>
+  </body>
+</html>

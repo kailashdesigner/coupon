@@ -784,6 +784,35 @@ footer {
   }
 }
 
+.contactSection {
+  margin: 50px 0;
+}
+
+.form-control:focus,.form-select:focus {
+  box-shadow: none;
+}
+
+.btnSubmit{
+  width: 150px;
+  padding: 10px 0;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.privacySection{
+  margin: 50px 0;
+}
+.privacyWrap{
+  h1{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  p{
+    font-size: 14px;
+  }
+}
+
 // modal
 .modal {
 
@@ -881,12 +910,13 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+
   .redeemWrap {
     max-width: 600px;
     width: 100%;
     background-color: $white;
     border-radius: 10px;
-    padding:40px 20px;
+    padding: 40px 20px;
     // position: absolute;
     // top: 50%;
     // left: 50%;
@@ -992,5 +1022,9 @@ footer {
     background-color: rgba(152, 128, 255, 0.2);
   }
 }
+
+
+
+
 
 /*# sourceMappingURL=app.css.map */

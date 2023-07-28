@@ -573,48 +573,7 @@
     ></script>
     <script src="../../assets/js/app.js"></script>
     <script>
-      $(document).ready(function () {
-        
-        function storeCardData(redirectItemContent, weblocation) {
-          var pageName = $(".innerTitleSection h1").text();
-          var pageLogo = $(".innerTitleSection img").attr("src");
-
-          // Create an array with the card data
-          var cardArray = [pageName, pageLogo, redirectItemContent, weblocation];
-
-          // Convert the array to a JSON string
-          var cardArrayJSON = JSON.stringify(cardArray);
-
-          // Store the JSON string in sessionStorage
-          sessionStorage.setItem("cardData", cardArrayJSON);
-        }
-
-        $(".btnPassData").on("click", function () {
-          var redirectItemContent = $(this).parent().find("p").text();
-          var weblocation = $(this).next("a").attr("href");
-          // console.log(redirectItemContent, weblocation);
-          // Store card data in sessionStorage
-          storeCardData(redirectItemContent, weblocation);
-
-          // Navigate to another page and pass data as query parameters
-          var targetPage = "../../redeem.html";
-          var urlWithQueryParams = targetPage + "?data=" + encodeURIComponent(sessionStorage.getItem("cardData")) ;
-          window.open(urlWithQueryParams, '_blank');
-        });
-
-        // $(".btnPassData").on("click", function () {
-        //   var redirectItemContent = $(this).parent().find("p").text();
-        //   var redirectPageName = pageName;
-        //   var redirectPageLogo = pageLogo;
-
-        //   sessionStorage.setItem("redirectPageName", redirectPageName);
-        //   sessionStorage.setItem("redirectPageLogo", redirectPageLogo);
-        //   sessionStorage.setItem("redirectItemContent", redirectItemContent);
-        //   var targetPage = "../../redeem.html";
-        //   var urlWithQueryParams = targetPage + "?openInNewTab=true";
-        //   window.open(urlWithQueryParams, "_blank");
-        // });
-      });
+     
     </script>
   </body>
 </html>

@@ -585,6 +585,34 @@ footer .fotterMenu li:last-child a {
   margin-bottom: 0;
 }
 
+.contactSection {
+  margin: 50px 0;
+}
+
+.form-control:focus, .form-select:focus {
+  box-shadow: none;
+}
+
+.btnSubmit {
+  width: 150px;
+  padding: 10px 0;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.privacySection {
+  margin: 50px 0;
+}
+
+.privacyWrap h1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.privacyWrap p {
+  font-size: 14px;
+}
+
 .modal .btn-close {
   position: absolute;
   right: 10px;

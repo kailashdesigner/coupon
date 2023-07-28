@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coupon</title>
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.1/swiper-bundle.css"
+        integrity="sha512-l7kpss+EakeeIboLV6JMyXOnym/Ls1WoZ7wiutyGSNbzgTO6AyTSw5Xe5JsRcqR592JBETP/OD6AZREwrAxD2Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../../assets/css/app.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="mainWrapper">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../../assets/img/logo.png" alt="logo" />
+                </a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Travel <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item" href="./pages/travel/makemytrip.html">Makemytrip</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/travel/cleartrip.html">Cleartrip</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/travel/agoda.html">Agoda</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/travel/oyo.html">Oyo
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/travel/booking-com.html">Booking.com
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/travel/goibibo.html">Goibibo
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                href="#">
+                                Food <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item" href="./pages/food/pizzahut.html">Pizza hut
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/food/swiggy.html">Swiggy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/food/dominos.html">Dominos
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/food/Igp.html">Igp
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/food/fnp.html">Fnp
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                href="#">Electronics <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item" href="./pages/electronics/amazon.html">Amazon</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/electronics/flipkart.html">Flipkart
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/electronics/croma.html">Croma
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/electronics/samsung.html">Samsung
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/electronics/boat.html">Boat
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/electronics/dell.html">Dell
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/electronics/hp.html">Hp
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/electronics/lenovo.html">Lenovo
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                href="#">Fashion and lifestyle
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item" href="./pages/fashion/ajio.html">Ajio
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/fashion/myntra.html">Myntra
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/fashion/firstcry.html">Firstcry
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/fashion/m&s.html">M&S
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/fashion/amazone.html">Amazone
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/fashion/flipkart.html">Flipkart
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/fashion/zivame.html">Zivame
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  href="#"
+                  >Bank offer <i class="fa-solid fa-chevron-down"></i
+                ></a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="#">Axis bank credit card </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Au small finance bank credit card
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Citi bank credit card </a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Sbi </a></li>
+                </ul>
+              </li> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Personal care
+                                <i class="fa-solid fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li>
+                                    <a class="dropdown-item" href="./pages/personalcare/wow.html">Wow
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/personalcare/mcaffine.html">Mcaffine
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/personalcare/plum.html">Plum
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/personalcare/beardo.html">Beardo
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/personalcare/bsc.html">Bsc
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/personalcare/nyka.html">Nyka
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/personalcare/kama-ayurveda.html">Kama
+                                        ayurveda
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/personalcare/thebodyshop.html">The body shop
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./pages/personalcare/jiva.html">Jiva
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="innerTitleSection">
+            <div class="container">
+                <div class="pageTitle">
+                    <img src="../../assets/img/amazon-logo-small.jpg" alt="logo" style="display: none" />
+                    <h1>Privacy Policy</h1>
+                    <p>
+                        If you are facing cashback related issues, like transactions not tracking, or transaction
+                        pending for too
+                        long, please fill out cashback related issues form.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="privacySection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="privacyWrap">
+                            <h1>Privacy Policy for CouponDunia</h1>
+                            <p>Privacy Policy for CouponDuniaThis Privacy Policy (“Policy”) describes the information
+                                which CouponDunia, a Times Group Company (Bennett, Coleman & Co. Ltd) (“We”, “Us”,
+                                “Our”, “BCCL”) collects from You (as defined below) when You visit, download, access,
+                                and/ or use this website, mobile applications, m-web, (“Website”) for delivery of
+                                information, products, offerings, subscriptions and/or content via any mobile or
+                                internet connected device or otherwise through our Website (collectively the
+                                "Services").</p>
+                            <p>This Policy is to make You aware of the procedures adopted by Us with respect to
+                                collection, use, storage, processing, disclosure and protection of any information
+                                provided by You, in the capacity of an individual, a guest user, browser and/or
+                                representative of an entity, who uses our Services (“User” or “You/r”).</p>
+                            <p>This Policy is to be read in conjunction with Our Cookie Policy and Terms and Conditions.
+                                The term "Cookie Policy" as used under this Policy shall refer to Our Cookie Policy as
+                                made available at CouponDunia Cookie Policy, as revised from time to time by Us. The
+                                term "Terms and Conditions" as used herein shall refer to Our online terms of use as
+                                made available at coupondunia.in/terms-service. as revised from time to time by Us. By
+                                providing your consent to use our Services, You agree to be bound by the Terms and
+                                Conditions and this Policy.</p>
+                            <p>
+                                Please keep in mind that when You provide information to Us on a third-party site or
+                                platform (for example, via Our Website or applications like social media login). The
+                                information We collect is through those third-party sites linked with Our Websites and
+                                is covered by this Policy, and the information the third-party site or platform collects
+                                is subject to the third-party site or platform’s privacy practices. Privacy choices You
+                                have made on the third-party site or platform will not apply to Our use of the
+                                information We have collected directly through Our Websites . Please also keep in
+                                observance that Our Websites and may contain links to other sites not owned or
+                                controlled by Us and We are not responsible for the privacy practices of those sites. We
+                                encourage You to be aware when You leave Our Websites to read the privacy policies of
+                                other sites they may collect Your personal information.
+                            </p>
+                            <p>
+                                All capitalized terms used and not been specifically defined herein shall have the
+                                meaning ascribed to such terms under the Terms and Conditions, Cookie Policy and/or any
+                                applicable laws.
+                            </p>
+                        </div>
+                        <div class="privacyWrap">
+                            <h1>What happens to Your data collected by Us prior to May 25, 2018?</h1>
+                            <p>If Our systems can identify from the information We possess, that such information
+                                belongs to a User from the EU region, then We shall drop You an email informing You
+                                about the data We possess and seek Your consent to continue storing and processing the
+                                information. If You have any query, then You can contact Our Grievance Officer at the
+                                email address provided below.</p>
+                            <p>
+                                In case You choose to withdraw Your consent, We will delete Your information but We may
+                                choose to archive and retain some information for legal purposes. Once such information
+                                is archived, We will not use it for any purpose and shall disclose it only to comply
+                                with any applicable law, court order, or request from governmental authority or law
+                                enforcement agencies.
+                            </p>
+                            <p>
+                                In some cases, Website may have stored some of Your information in Your device
+                                (computer, mobile, tablet). You will have to delete such information from Your device
+                                manually. If You have accessed Website and BCCL Services from multiple devices, then You
+                                will have to delete the information stored in each of such device manually.
+                            </p>
+                        </div>
+                        <div class="privacyWrap">
+                            <h1>User Consent</h1>
+                            <p>By using Our Services(for example, when You register for an account, enter a contest or
+                                promotion, communicate with Us, on Our Websites or through social media), You agree to
+                                provide consent to Our collection, use and sharing of Your personal information as
+                                described in this Policy. In some cases, particularly if You reside in a country
+                                governed by a data protection regulation, We may ask You to provide explicit consent to
+                                access Our services before proceeding for further operations. In case of any roaming
+                                user profile or if You are a traveller visiting various countries around the world and
+                                avail Services , then We will consider the country of registration as Your primary
+                                country and the consents obtained at the time of registration will be valid for Your
+                                processing of personal information.</p>
+
+
+                        </div>
+                        <div class="privacyWrap">
+                            <h1>Accessing Website and BCCL Services through VPN
+                            </h1>
+                            <p>You should not access or use the Website or BCCL Services by means of any mechanism or
+                                technology which conceals Your actual geo-location or provides incorrect details of Your
+                                location (for example, use a virtual private network (VPN) to access BCCL Services ,
+                                proxy server).
+
+                            </p>
+                            <p>We will not be responsible or liable for any collection, storage or processing of Your
+                                personal information or data if You use any mechanism or technology to access or use
+                                Website or BCCL services which conceals Your actual geo-location.
+
+                            </p>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- footer -->
+        <footer>
+            <div class="container">
+                <div class="companyLogo">
+                    <a href="index.html">
+                        <img src="../../assets/img/logo-bottom.png" alt="logo" />
+                    </a>
+                </div>
+                <ul class="fotterMenu">
+                    <li>
+                        <a href="index.html"> Home </a>
+                    </li>
+                    <li>
+                        <a href="./pages/blog.html"> Blog </a>
+                    </li>
+                    <li>
+                        <a href="./pages/contact-us.html"> Contact us </a>
+                    </li>
+                    <li>
+                        <a href="./pages/privacy-policy.html"> Privacy Policy </a>
+                    </li>
+                </ul>
+                <ul class="socialMedia">
+                    <li>
+                        <a href="#" class="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="linkedin">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="pinterest">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="../../assets/js/bootstrap.bundle.js"></script>
+        <script src="../../assets/js/app.js"></script>
+
+</body>
+
+</html>
