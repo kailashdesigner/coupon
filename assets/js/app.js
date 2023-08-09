@@ -1,7 +1,6 @@
 $('.bottomContent').hide();
 $(".showContent").click(function () {
   $(this).next('.bottomContent').toggle();
-  
 });
 
 

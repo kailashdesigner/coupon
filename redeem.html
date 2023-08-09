@@ -1,94 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Redeem</title>
-    <link href="./assets/css/bootstrap.css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.1/swiper-bundle.css"
-      integrity="sha512-l7kpss+EakeeIboLV6JMyXOnym/Ls1WoZ7wiutyGSNbzgTO6AyTSw5Xe5JsRcqR592JBETP/OD6AZREwrAxD2Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link href="./assets/css/app.css" rel="stylesheet" />
-  </head>
-  <body>
-    <!-- <h1 class="title"></h1> -->
-    <div class="redeemPage">
-      <div class="redeemWrap">
-        <p class="content">
-          Exclusive: Upto 15% Off On Domestic Flight Booking
-        </p>
-        <div class="dealActivated">
-          <span>Deal Activated</span> No coupon code Required!
-        </div>
-        <h4>
-          Please wait while we are redirecting you to
-          <span id="redirectName"></span>
-        </h4>
-        <div class="redirectingProcess">
-          <img src="./assets/img/logo.png" style="height: 12px" alt="logo" />
-          <div class="dot-flashing"></div>
-          <img
-            id="logo"
-            src="./assets/img/makemytrip-logo-small.jpg"
-            alt="logo"
-          />
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Redeem</title>
+  <link href="./assets/css/bootstrap.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.1/swiper-bundle.css"
+    integrity="sha512-l7kpss+EakeeIboLV6JMyXOnym/Ls1WoZ7wiutyGSNbzgTO6AyTSw5Xe5JsRcqR592JBETP/OD6AZREwrAxD2Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./assets/css/app.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- <h1 class="title"></h1> -->
+  <div class="redeemPage">
+    <div class="redeemWrap">
+      <p class="content">
+        Exclusive: Upto 15% Off On Domestic Flight Booking
+      </p>
+      <div class="dealActivated">
+        <span>Deal Activated</span> No coupon code Required!
+      </div>
+      <h4>
+        Please wait while we are redirecting you to
+        <span id="redirectName"></span>
+      </h4>
+      <div class="redirectingProcess">
+        <img src="./assets/img/logo.png" style="height: 12px" alt="logo" />
+        <div class="dot-flashing"></div>
+        <!-- <img id="logo" src="./assets/img/makemytrip-logo-small.jpg" alt="logo" /> -->
+        <div class="my-class">
+
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./assets/js/bootstrap.bundle.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.1/swiper-bundle.min.js"
-      integrity="sha512-amT8JUsTgg8svD43Vnz8K+C5Obi5Njn+q2zyVixZrBAU6xk4awXGIQNrVTTZNpJZk8D2hTPOSsLNEHSnSNzv7g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script>
-      // document.addEventListener("DOMContentLoaded", function () {
-      //   var urlParams = new URLSearchParams(window.location.search);
-      //   var redirectName = document.querySelector("#redirectName");
-      //   var redirectLogo = document.querySelector("#logo");
-      //   var redirectContent = document.querySelector(".content");
-      //   var openInNewTab = urlParams.get("openInNewTab");
-      //   if (openInNewTab === "true") {
-      //     var receivedData = sessionStorage.getItem("redirectPageName");
-      //     if (receivedData) {
-      //       console.log("Received data: " + receivedData);
-      //       redirectName.innerHTML = receivedData;
-      //       text(cardData[0]);
-      //     }
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.0.1/swiper-bundle.min.js"
+    integrity="sha512-amT8JUsTgg8svD43Vnz8K+C5Obi5Njn+q2zyVixZrBAU6xk4awXGIQNrVTTZNpJZk8D2hTPOSsLNEHSnSNzv7g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    // document.addEventListener("DOMContentLoaded", function () {
+    //   var urlParams = new URLSearchParams(window.location.search);
+    //   var redirectName = document.querySelector("#redirectName");
+    //   var redirectLogo = document.querySelector("#logo");
+    //   var redirectContent = document.querySelector(".content");
+    //   var openInNewTab = urlParams.get("openInNewTab");
+    //   if (openInNewTab === "true") {
+    //     var receivedData = sessionStorage.getItem("redirectPageName");
+    //     if (receivedData) {
+    //       console.log("Received data: " + receivedData);
+    //       redirectName.innerHTML = receivedData;
+    //       text(cardData[0]);
+    //     }
 
-      //     setTimeout(function () {
-      //       window.location.href = "https://www.flipkart.com";
-      //     }, 5000);
-      //   }
-      // });
+    //     setTimeout(function () {
+    //       window.location.href = "https://www.flipkart.com";
+    //     }, 5000);
+    //   }
+    // });
 
-      $(document).ready(function () {
-        // Retrieve card data from query parameters
-        var urlParams = new URLSearchParams(window.location.search);
-        var cardDataJSON = urlParams.get("data");
-        var cardData = JSON.parse(cardDataJSON);
-        $("#redirectName").text(cardData[0]);
-        $("#logo").attr("src", cardData[1]);
-        $('.content').text(cardData[2])
-        console.log({cardData})
-        setTimeout(function () {
-          window.location.href = cardData[3]
-        }, 2000);
-      });
-    </script>
-  </body>
+    $(document).ready(function () {
+
+
+
+
+
+      var urlParams = new URLSearchParams(window.location.search);
+      var cardDataJSON = urlParams.get("data");
+      var cardData = JSON.parse(cardDataJSON);
+      $("#redirectName").text(cardData[0]);
+      $("#logo").attr("src", cardData[1]);
+      $('.content').text(cardData[2])
+
+
+      var clazz = $(".my-class");
+
+      // var img = $("<img>");
+      // img.attr("src", "image.jpg");
+      // img.attr("alt", "My image");
+       var valueSmall = cardData[0];
+      var img = document.createElement("img");
+      img.src = "./assets/img/" + valueSmall.toLowerCase() + ".png";
+
+      // Append the image element to the class element.
+      clazz.append(img);
+      // Retrieve card data from query parameters
+
+      console.log({ cardData })
+      setTimeout(function () {
+        window.location.href = cardData[3]
+      }, 2000000);
+    });
+  </script>
+</body>
+
 </html>

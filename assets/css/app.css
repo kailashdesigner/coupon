@@ -318,6 +318,7 @@ ul {
   position: relative;
   border: none;
   box-shadow: 0 5px 2px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
 }
 .blogItem .date {
   position: absolute;
@@ -337,6 +338,9 @@ ul {
 }
 .blogItem .card-title a {
   color: #000;
+}
+.blogItem .card-title a:hover {
+  color: #f66f62;
 }
 .blogItem .card-text {
   font-size: 14px;
@@ -589,7 +593,8 @@ footer .fotterMenu li:last-child a {
   margin: 50px 0;
 }
 
-.form-control:focus, .form-select:focus {
+.form-control:focus,
+.form-select:focus {
   box-shadow: none;
 }
 

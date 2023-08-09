@@ -451,6 +451,7 @@ ul {
   position: relative;
   border: none;
   box-shadow: 0 5px 2px 0 rgba($color: #000000, $alpha: 0.1);
+  margin-bottom: 30px;
 
   .date {
     position: absolute;
@@ -471,6 +472,12 @@ ul {
 
     a {
       color: $black;
+    }
+
+    a {
+      &:hover {
+        color: $primary;
+      }
     }
   }
 
@@ -788,27 +795,30 @@ footer {
   margin: 50px 0;
 }
 
-.form-control:focus,.form-select:focus {
+.form-control:focus,
+.form-select:focus {
   box-shadow: none;
 }
 
-.btnSubmit{
+.btnSubmit {
   width: 150px;
   padding: 10px 0;
   text-transform: capitalize;
   font-size: 16px;
 }
 
-.privacySection{
+.privacySection {
   margin: 50px 0;
 }
-.privacyWrap{
-  h1{
+
+.privacyWrap {
+  h1 {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 15px;
   }
-  p{
+
+  p {
     font-size: 14px;
   }
 }
