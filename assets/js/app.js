@@ -113,8 +113,11 @@ var swiper = new Swiper(".topCategoriesSwiper", {
       slidesPerView: 1,
       spaceBetween: 0,
     },
+    480:{
+      slidesPerView:2,
+    },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 10,
     },
     1024: {
