@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Active Deal</title>
+  <title>Home - Active Deal</title>
   <link rel="shortcut icon" href="./assets/img/favicon.ico">
   <link href="./assets/css/bootstrap.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -1255,7 +1255,6 @@
   <script>
     $(document).ready(function () {
       function storeCardData(redirectItemContent, weblocation, pageName) {
-        // var pageName = $(".swiper-slide h2").text();
         var pageLogo = $(".innerTitleSection img").attr("src");
 
         // Create an array with the card data
@@ -1271,8 +1270,7 @@
         var redirectItemContent = $(this).parent().find("h2").text();
         var weblocation = $(this).next("a").attr("href");
         var pageName = $(this).parent().find('.platform span').text();
-        // var weblocation = $(this).next("a").attr("href");
-        // console.log(redirectItemContent, weblocation);
+        
         // Store card data in sessionStorage
         storeCardData(redirectItemContent, weblocation, pageName);
 
