@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./assets/css/swiper.css"/>
+  <link rel="stylesheet" href="./assets/css/swiper.css" />
   <link href="./assets/css/app.css" rel="stylesheet" />
 </head>
 
@@ -214,7 +214,7 @@
               <img src="./assets/img/Desktop-28-06-2023(1)-1688041374.png" class="d-block w-100" alt="banner 3" />
             </a>
           </div>
-         
+
           <div class="swiper-slide">
             <a href="#">
               <img src="./assets/img/HDFC-Desktop-16-06-2023-1686984458.png" class="d-block w-100" alt="banner 3" />
@@ -842,8 +842,7 @@
                 <div class="couponCode">MMTBESTBUY</div>
                 <div class="couponText">Show Coupon</div>
               </button>
-              <a
-                href="google.com"></a>
+              <a href="google.com"></a>
             </div>
           </div>
         </div>
@@ -1270,7 +1269,7 @@
         var redirectItemContent = $(this).parent().find("h2").text();
         var weblocation = $(this).next("a").attr("href");
         var pageName = $(this).parent().find('.platform span').text();
-        
+
         // Store card data in sessionStorage
         storeCardData(redirectItemContent, weblocation, pageName);
 
@@ -1283,6 +1282,7 @@
 
   </script>
   <script>
+
     $(document).ready(function () {
       if (localStorage.getItem('popState') != 'shown') {
         $("#popup").delay(8000).fadeIn();
