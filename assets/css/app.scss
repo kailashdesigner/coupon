@@ -481,19 +481,19 @@ ul {
 .innerTitleSection {
   background-color: #272e3a;
   padding: 30px 0;
+  .container{
+    display: flex;
+    align-items: center;
+  }
+}
+img{
+  height: 30px;
+  margin-right: 15px;
 }
 
 .pageTitle {
-  text-align: center;
-
+margin-left: 20px;
   h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    img{
-      height: 20px;
-      margin-right: 15px;
-    }
     color: $white;
     font-size: 24px;
     font-weight: 600;
@@ -523,7 +523,7 @@ ul {
   @include flexbox(flex, center, space-between, nowrap);
 
   .offer-details {
-    flex: auto;
+    flex: 1;
     margin-right: 15px;
 
     .Verified {
@@ -557,10 +557,6 @@ ul {
 }
 
 .offer-card-bottom {
-  border-top: 1px solid rgba($color: $grey, $alpha: 0.1);
-  padding: 10px 15px;
-  background-color: #f7f7f7;
-
   button {
     font-size: 13px;
     padding: 0px !important;
@@ -1009,6 +1005,10 @@ footer {
 
 // media queries
 @media screen and (max-width:991.98px) {
+
+  .offer-card-main{
+    flex-direction: column;
+  }
   .navbar {
     .container {
       flex-direction: row-reverse;
@@ -1041,6 +1041,12 @@ footer {
       p {
         font-size: 12px;
       }
+    }
+  }
+  .innerTitleSection{
+    .container{
+      flex-direction: column;
+      text-align: center;
     }
   }
 }

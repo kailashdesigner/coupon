@@ -1,6 +1,6 @@
 $('.bottomContent').hide();
 $(".showContent").click(function () {
-  $(this).next('.bottomContent').toggle();
+  $(this).parent().find('.bottomContent').toggle();
 });
 
 
@@ -16,7 +16,7 @@ $(document).ready(function () {
   buttons.click(function (value) {
     var thisButton = $(this);
     var title = $(this).parent().find("h1").text();
-    var content = $(this).parent().find("p").text();
+    var content = $(this).parent().find(".para").text();
     var couponCode = $(this).find(".couponCode").text();
     var weblocation = $(this).next("a").attr("href");
 
