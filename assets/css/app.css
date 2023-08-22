@@ -374,7 +374,7 @@ ul {
 }
 
 img {
-  height: 30px;
+  height: 32px;
   margin-right: 15px;
 }
 
@@ -406,7 +406,7 @@ img {
 .offer-card-main {
   padding: 15px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   flex-wrap: nowrap;
 }
@@ -425,8 +425,9 @@ img {
   font-size: 14px;
 }
 .offer-card-main .offer-details h1 {
-  font-size: 18px;
+  font-size: 16px;
   color: #000;
+  line-height: 1.5;
   font-weight: 600;
   word-break: break-all;
 }
@@ -436,6 +437,10 @@ img {
 }
 .offer-card-main button {
   white-space: nowrap;
+}
+.offer-card-main button.couponButton {
+  position: relative;
+  bottom: 7px;
 }
 
 .offer-card-bottom button {
@@ -809,6 +814,14 @@ footer .fotterMenu li:last-child a {
 @media screen and (max-width: 991.98px) {
   .offer-card-main {
     flex-direction: column;
+    justify-content: center;
+  }
+  .offer-card-main .offer-details {
+    margin-right: 0;
+    text-align: center;
+  }
+  .offer-card-main button {
+    margin: 20px auto 0;
   }
   .navbar .container {
     flex-direction: row-reverse;
@@ -833,6 +846,12 @@ footer .fotterMenu li:last-child a {
   .innerTitleSection .container {
     flex-direction: column;
     text-align: center;
+  }
+  .innerTitleSection .container img {
+    margin: 0 0 15px !important;
+  }
+  .innerTitleSection .container .pageTitle {
+    margin-left: 0;
   }
 }
 #popup {

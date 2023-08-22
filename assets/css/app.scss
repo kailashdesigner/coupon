@@ -487,7 +487,7 @@ ul {
   }
 }
 img{
-  height: 30px;
+  height: 32px;
   margin-right: 15px;
 }
 
@@ -520,7 +520,7 @@ margin-left: 20px;
 
 .offer-card-main {
   padding: 15px;
-  @include flexbox(flex, center, space-between, nowrap);
+  @include flexbox(flex, flex-end, space-between, nowrap);
 
   .offer-details {
     flex: 1;
@@ -539,8 +539,9 @@ margin-left: 20px;
     }
 
     h1 {
-      font-size: 18px;
+      font-size: 16px;
       color: $black;
+      line-height: 1.5;
       font-weight: 600;
       word-break: break-all;
     }
@@ -553,6 +554,10 @@ margin-left: 20px;
 
   button {
     white-space: nowrap;
+    &.couponButton{
+      position: relative;
+      bottom: 7px;
+    }
   }
 }
 
@@ -1008,6 +1013,14 @@ footer {
 
   .offer-card-main{
     flex-direction: column;
+    justify-content: center;
+    .offer-details{
+      margin-right: 0;
+      text-align: center;
+    }
+    button{
+      margin: 20px auto 0;
+    }
   }
   .navbar {
     .container {
@@ -1047,6 +1060,12 @@ footer {
     .container{
       flex-direction: column;
       text-align: center;
+      img{
+        margin: 0 0 15px !important;
+      }
+      .pageTitle{
+        margin-left: 0;
+      }
     }
   }
 }

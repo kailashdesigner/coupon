@@ -1,5 +1,7 @@
 $('.bottomContent').hide();
-$(".showContent").click(function () {
+const myButton = $(".showContent");
+
+$(myButton).click(function () {
   $(this).parent().find('.bottomContent').toggle();
 });
 
@@ -55,7 +57,7 @@ $(document).ready(function () {
   }
 
   $(".btnPassData").on("click", function () {
-    var redirectItemContent = $(this).parent().find("p").text();
+    var redirectItemContent = $(this).parent().find(".para").text();
     var weblocation = $(this).next("a").attr("href");
     // console.log(redirectItemContent, weblocation);
     // Store card data in sessionStorage

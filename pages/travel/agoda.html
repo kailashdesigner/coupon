@@ -16,8 +16,9 @@
 
 <body>
   <div class="mainWrapper">
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg">
+  
+     <!-- navbar -->
+     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
           aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -159,31 +160,6 @@
                 </li>
               </ul>
             </li>
-            <!-- <li class="nav-item dropdown">
-                <a
-                  class="nav-link"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                  href="#"
-                  >Bank offer <i class="fa-solid fa-chevron-down"></i
-                ></a>
-                <ul class="dropdown-menu dropdown-menu-end">
-                  <li>
-                    <a class="dropdown-item" href="#">Axis bank credit card </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#"
-                      >Au small finance bank credit card
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Citi bank credit card </a>
-                  </li>
-                  <li><a class="dropdown-item" href="#">Sbi </a></li>
-                </ul>
-              </li> -->
             <li class="nav-item dropdown">
               <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Personal care
                 <i class="fa-solid fa-chevron-down"></i></a>
@@ -415,6 +391,41 @@
       </div>
     </div>
   </div>
+
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+        <div class="aboutPage">
+          <img src="../../assets/img/croma.png" alt="logo" />
+          <div>
+            <h1 class="titleNew"></h1>
+            <p class="content"></p>
+          </div>
+        </div>
+
+
+        <div class="couponWrapper">
+          <div class="offerCode">
+            <div class="couponInfo">
+              <h1 class="Code"></h1>
+              <div class="spinner">
+                <i class="fa fa-spinner fa-spin"></i>
+              </div>
+            </div>
+            <button class="btn btn-primary" id="copyButton">Copy Code</button>
+          </div>
+          <p>
+            <a class="anchor" target="_blank" href="#">View Site</a> and
+            paste your code at checkout
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
  <!-- footer -->
  <footer>
