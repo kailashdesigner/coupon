@@ -3,6 +3,13 @@ const myButton = $(".showContent");
 
 $(myButton).click(function () {
   $(this).parent().find('.bottomContent').toggle();
+  $(this).toggleClass('show');
+  if ($(this).text() == 'Show More') {
+    $(this).text('Show Less');
+  } else {
+    $(this).text('Show More');
+  }
+
 });
 
 
@@ -41,7 +48,7 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-        
+
   function storeCardData(redirectItemContent, weblocation) {
     var pageName = $(".innerTitleSection h1").text();
     var pageLogo = $(".innerTitleSection img").attr("src");
@@ -65,7 +72,7 @@ $(document).ready(function () {
 
     // Navigate to another page and pass data as query parameters
     var targetPage = "../../redeem.html";
-    var urlWithQueryParams = targetPage + "?data=" + encodeURIComponent(sessionStorage.getItem("cardData")) ;
+    var urlWithQueryParams = targetPage + "?data=" + encodeURIComponent(sessionStorage.getItem("cardData"));
     window.open(urlWithQueryParams, '_blank');
   });
 });
@@ -115,8 +122,8 @@ var swiper = new Swiper(".topCategoriesSwiper", {
       slidesPerView: 1,
       spaceBetween: 0,
     },
-    480:{
-      slidesPerView:2,
+    480: {
+      slidesPerView: 2,
     },
     768: {
       slidesPerView: 3,

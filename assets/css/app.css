@@ -35,7 +35,6 @@ ul {
 }
 .btn-link:hover, .btn-link:focus {
   color: #f66f62;
-  text-decoration: underline;
 }
 
 .couponButton {
@@ -78,6 +77,19 @@ ul {
 }
 .couponButton.showCouponCode .couponCode {
   justify-content: center;
+}
+
+.showContent {
+  position: relative;
+}
+.showContent::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f078";
+  padding-left: 2px;
+}
+.showContent.show::after {
+  content: "\f077";
 }
 
 /* navbar */
@@ -817,9 +829,8 @@ footer .fotterMenu li:last-child a {
   }
   .offer-card-main .offer-details {
     margin-right: 0;
-    text-align: center;
   }
-  .offer-card-main button {
+  .offer-card-main button.couponButton {
     margin: 20px auto 0;
   }
   .navbar .container {

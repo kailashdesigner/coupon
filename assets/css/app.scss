@@ -60,7 +60,7 @@ ul {
     &:hover,
     &:focus {
       color: $primary;
-      text-decoration: underline;
+      
     }
   }
 }
@@ -110,6 +110,21 @@ ul {
 
     .couponCode {
       justify-content: center;
+    }
+  }
+}
+
+.showContent{
+  position: relative;
+  &::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f078";
+    padding-left: 2px;
+  }
+  &.show{
+    &::after{
+      content: "\f077";
     }
   }
 }
@@ -1016,10 +1031,11 @@ footer {
     justify-content: center;
     .offer-details{
       margin-right: 0;
-      text-align: center;
     }
     button{
-      margin: 20px auto 0;
+      &.couponButton{
+        margin: 20px auto 0;
+      }
     }
   }
   .navbar {
