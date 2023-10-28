@@ -363,7 +363,7 @@ ul {
 .infoSection {
   margin-bottom: 50px;
 }
-.infoSection h1 {
+.infoSection h2 {
   font-size: 14px;
   text-align: center;
   margin-bottom: 30px;
@@ -435,7 +435,7 @@ ul {
   color: #1fa552;
   font-size: 14px;
 }
-.offer-card-main .offer-details h1 {
+.offer-card-main .offer-details h2 {
   font-size: 16px;
   color: #000;
   line-height: 1.5;
@@ -600,7 +600,7 @@ footer .fotterMenu li:last-child a {
   height: 30px;
   background-blend-mode: color;
 }
-.aboutPage h1 {
+.aboutPage h2 {
   font-size: 18px;
   color: #000;
   font-weight: 500;
@@ -688,7 +688,7 @@ footer .fotterMenu li:last-child a {
   justify-content: center;
   flex-wrap: wrap;
 }
-.offerCode .couponInfo h1 {
+.offerCode .couponInfo h2 {
   color: #f66f62;
   font-weight: 600;
   margin: 0;
@@ -822,6 +822,31 @@ footer .fotterMenu li:last-child a {
     background-color: rgba(152, 128, 255, 0.2);
   }
 }
+.categorySection {
+  margin: 50px 0;
+}
+
+.categoryWrap {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #dfdfdf;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.categoryWrap a {
+  display: block;
+  text-align: center;
+}
+.categoryWrap a img {
+  height: 25px;
+}
+.categoryWrap a h2 {
+  margin: 15px 0 0;
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 991.98px) {
   .offer-card-main {
     flex-direction: column;

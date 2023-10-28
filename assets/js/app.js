@@ -24,7 +24,7 @@ $(document).ready(function () {
   var pageTitle = $(".pageTitle h1").text();
   buttons.click(function (value) {
     var thisButton = $(this);
-    var title = $(this).parent().find("h1").text();
+    var title = $(this).parent().find("h2").text();
     var content = $(this).parent().find(".para").text();
     var couponCode = $(this).find(".couponCode").text();
     var weblocation = $(this).next("a").attr("href");
