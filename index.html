@@ -385,7 +385,7 @@
         <h2 class="sectionTitle">Mobile Deals</h2>
         <a href="#" class="btn btn-link">View All</a>
       </div>
-      
+
       <div class="swiper delas">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -483,7 +483,7 @@
         <h2 class="sectionTitle">Fashion Deals</h2>
         <a href="#" class="btn btn-link">View All</a>
       </div>
-      
+
       <div class="swiper delas">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -586,41 +586,40 @@
           <div class="swiper-slide">
             <div>
               <span class="platform"><span>AmaZon</span> Offer</span>
-              <img src="./assets/img/kitchen/amazon-kitchen-store-offer-28-04-2023-0a-.jpg" alt="travel;" />
+              <img src="https://m.media-amazon.com/images/I/51a02ZDkk6S._SX679_.jpg" alt="travel;" />
               <h2>
-                Home & Kitchen Product Starting from Rs.98 + Extra 5% Amazon
-                Pay Cash for Prime Users (Collect offer)
+                Preethi Blue Leaf Diamond MG-214 mixer grinder 750 watt
               </h2>
               <div class="price">
                 <span class="retularPrice">
-                  <i class="fa-solid fa-indian-rupee-sign"></i>1499
+                  <i class="fa-solid fa-indian-rupee-sign"></i>5000
                 </span>
                 <span class="salePrice">
-                  <i class="fa-solid fa-indian-rupee-sign"></i>699
+                  <i class="fa-solid fa-indian-rupee-sign"></i>3199
                 </span>
               </div>
               <button class="btn btn-primary btnGetDeal">Get This Deal</button>
-              <a href="https://www.jiocinema.com/"></a>
+              <a href="https://www.amazon.in/dp/B0188KPKB2?utf-8&tag=cashkacom-21&ascsubtag=CHKR20231015A276855418"></a>
             </div>
           </div>
           <div class="swiper-slide">
             <div>
               <span class="platform"><span>AmaZon</span> Offer</span>
-              <img src="./assets/img/kitchen/amazon-offer-home-kitchen-04.jpg" alt="travel;" />
+              <img src="https://m.media-amazon.com/images/I/51SB72zh4QL._SX679_.jpg" alt="travel;" />
               <h2>
                 Upto 70% off + Extra 5% Amazon Pay Cash (Collect offer) on
                 Home & Kitchen
               </h2>
               <div class="price">
                 <span class="retularPrice">
-                  <i class="fa-solid fa-indian-rupee-sign"></i>1499
+                  <i class="fa-solid fa-indian-rupee-sign"></i>1500
                 </span>
                 <span class="salePrice">
-                  <i class="fa-solid fa-indian-rupee-sign"></i>399
+                  <i class="fa-solid fa-indian-rupee-sign"></i>1299
                 </span>
               </div>
               <button class="btn btn-primary btnGetDeal">Get This Deal</button>
-              <a href="https://www.jiocinema.com/"></a>
+              <a href="https://www.amazon.in/Lifelong-LLGS912-Automatic-Ignition-Toughened/dp/B097PDHWY8?utf-8&tag=cashkacom-21&ascsubtag=CHKR20231015A276854859"></a>
             </div>
           </div>
           <div class="swiper-slide">
@@ -1210,13 +1209,15 @@
 
 
   <div style="display:none" id="popup">
-    <img src="./assets/img/Telegram-Symbol.png" alt="telegram logo" />
-    <p>
-      For more exclusive offer join are telegram <a href="https://telegram.org/">Click Here</a>
-    </p>
-    <button id="close">
-      Close
-    </button>
+    <div class="popupWrap">
+      <img src="./assets/img/Telegram-Symbol.png" alt="telegram logo" />
+      <p>
+        For more exclusive offer join are telegram <a href="https://telegram.org/">Click Here</a>
+      </p>
+      <button id="close">
+        Close
+      </button>
+    </div>
   </div>
 
   <!-- footer -->
@@ -1307,7 +1308,7 @@
         $("#popup").delay(8000).fadeIn();
         localStorage.setItem('popState', 'shown')
         setInterval(function () {
-          $('body').addClass("showingModal")
+          $('#popup').addClass("showingModal");
         }, 8000);
       }
 
@@ -1317,7 +1318,7 @@
       });
       $('#close').click(function (e) {
         $('#popup').fadeOut();
-        $('body').removeClass('showingModal');
+        $('#popup').removeClass('showingModal');
       });
     });
   </script>
