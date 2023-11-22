@@ -619,7 +619,8 @@
                 </span>
               </div>
               <button class="btn btn-primary btnGetDeal">Get This Deal</button>
-              <a href="https://www.amazon.in/Lifelong-LLGS912-Automatic-Ignition-Toughened/dp/B097PDHWY8?utf-8&tag=cashkacom-21&ascsubtag=CHKR20231015A276854859"></a>
+              <a
+                href="https://www.amazon.in/Lifelong-LLGS912-Automatic-Ignition-Toughened/dp/B097PDHWY8?utf-8&tag=cashkacom-21&ascsubtag=CHKR20231015A276854859"></a>
             </div>
           </div>
           <div class="swiper-slide">
@@ -827,13 +828,13 @@
               <img src="./assets/img/Exclusive/abhibus-coupon-codes-2.png" alt="exclusive image" />
             </div>
             <div class="exclusive_content">
-              <span class="platform"><span>Abhibus</span></span>
-              <p>
+              <span class="platform"><h2>Abhibus</h2></span>
+              <p class="para">
                 Instant 15% Off On Bus Tickets + Extra Rs.150 CB (New Users)
               </p>
               <button data-bs-toggle="modal" data-bs-target="#exampleModal"
                 class="btn btn-primary couponButton showButtonNew">
-                <div class="couponCode">MMTBESTBUY</div>
+                <div class="couponCode">MMTBEasdfasSTBUY</div>
                 <div class="couponText">Show Coupon</div>
               </button>
               <a
@@ -847,19 +848,20 @@
               <img src="./assets/img/Exclusive/altbalaji-coupon-codes.png" alt="exclusive image" />
             </div>
             <div class="exclusive_content">
-              <span class="platform"><span>Altbalaji</span></span>
-              <p>
+              <span class="platform"><h2>Altbalaji</h2></span>
+              <p class="para">
                 Yearly Plan – Flat 10% Off On Alt Balaji Yearly Plan At Rs.270
                 Only
               </p>
               <button data-bs-toggle="modal" data-bs-target="#exampleModal"
                 class="btn btn-primary couponButton showButtonNew w-100">
-                <div class="couponCode">MMTBESTBUY</div>
+                <div class="couponCode">MMTwwwwwBESTBUY</div>
                 <div class="couponText">Show Coupon</div>
               </button>
               <a href="google.com"></a>
             </div>
           </div>
+
         </div>
         <div class="col-xl-4 col-md-6">
           <div class="exclusive_item">
@@ -867,14 +869,14 @@
               <img src="./assets/img/Exclusive/faasos-coupon-codes.png" alt="exclusive image" />
             </div>
             <div class="exclusive_content">
-              <span class="platform"><span>Faasos</span></span>
-              <p>
+              <span class="platform"><h2>Faasos</h2></span>
+              <p class="para">
                 Exclusive Offer – Flat 60% Off (Upto Rs.120) On Min Order Of
                 Rs.199 & Above
               </p>
               <button data-bs-toggle="modal" data-bs-target="#exampleModal"
                 class="btn btn-primary couponButton showButtonNew w-100">
-                <div class="couponCode">MMTBESTBUY</div>
+                <div class="couponCode">MMTBESTBeeeeeUY</div>
                 <div class="couponText">Show Coupon</div>
               </button>
               <a
@@ -885,11 +887,11 @@
         <div class="col-xl-4 col-md-6">
           <div class="exclusive_item">
             <div class="exclusive_image" style="background-color: #231616">
-              <img src="./assets/img/Exclusive/fastrack-coupon-codes.png" alt="exclusive image" />
+              <img src="./assets/img/Exclusive/fastrack-coupon-codes.png" alt="exclusive image" height="15" />
             </div>
             <div class="exclusive_content">
-              <span class="platform"><span>Fastrack</span></span>
-              <p>
+              <span class="platform"><h2>Fastrack</h2></span>
+              <p class="para">
                 Sitewide Offer – Upto 50% Off + Extra 10% (Upto Rs.1000) Off
                 On Min Order Rs.2249
               </p>
@@ -1095,6 +1097,7 @@
       </div>
     </div>
   </section>
+
 
   <section class="infoSection">
     <div class="container">
@@ -1320,7 +1323,23 @@
         $('#popup').fadeOut();
         $('#popup').removeClass('showingModal');
       });
+
+      var buttons = $(".showButtonNew");
+      var modalBox = $("#exampleModal");
+      var modalImage = modalBox.find('img');
+      console.log(modalImage.attr('src'))
+      buttons.click(function (value) {
+        var thisButton = $(this);
+        // var title = $(this).parent().find("h2").text();
+        // var content = $(this).parent().find(".para").text();
+        // var couponCode = $(this).find(".couponCode").text();
+        // var weblocation = $(this).next("a").attr("href");
+        var imagePath = $(this).parent().parent().find('img').attr('src');
+        modalImage.attr('src',imagePath)
+        
+      });
     });
+
   </script>
 </body>
 

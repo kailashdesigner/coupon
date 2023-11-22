@@ -29,7 +29,6 @@ $(document).ready(function () {
     var couponCode = $(this).find(".couponCode").text();
     var weblocation = $(this).next("a").attr("href");
 
-    console.log(couponCode);
 
     modalTitle.text(title);
     modalParaGrapf.text(content);
@@ -163,3 +162,23 @@ var swiper = new Swiper(".delas", {
     },
   },
 });
+
+function copyContent() {
+  var sourceDiv = document.querySelector(".Code");
+  var range = document.createRange();
+  range.selectNode(sourceDiv);
+  window.getSelection().removeAllRanges();
+  window.getSelection().addRange(range);
+  document.execCommand("copy");
+  window.getSelection().removeAllRanges();
+  var copyButton = document.getElementById("copyButton");
+            copyButton.innerText = "Copied!";
+            setTimeout(function() {
+                copyButton.innerText = "Copy Content";
+            }, 2000); // Change back to default text after 2 second
+}
+
+var copyButton = document.getElementById("copyButton");
+copyButton.addEventListener("click", copyContent);
+
+        

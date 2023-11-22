@@ -383,7 +383,7 @@ ul {
 }
 
 .innerTitleSection {
-  background-color: #272e3a;
+  background-color: rgba(0, 0, 0, 0.02);
   padding: 30px 0;
 }
 .innerTitleSection .container {
@@ -391,21 +391,23 @@ ul {
   align-items: center;
 }
 .innerTitleSection img {
-  height: 32px;
-  margin-right: 15px;
+  height: 40px;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 .pageTitle {
   margin-left: 20px;
 }
 .pageTitle h1 {
-  color: #fff;
+  color: #000;
   font-size: 24px;
   font-weight: 600;
 }
 .pageTitle p {
-  color: #838282;
+  color: rgba(0, 0, 0, 0.8);
   margin-bottom: 5px !important;
+  line-height: 1.7;
 }
 
 .couponSection {
@@ -571,7 +573,7 @@ footer .fotterMenu li:last-child a {
   padding: 15px;
   flex: 1;
 }
-.exclusive_item .exclusive_content .platform {
+.exclusive_item .exclusive_content .platform h2 {
   font-size: 12px;
   color: #838282;
 }

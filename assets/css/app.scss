@@ -502,7 +502,7 @@ ul {
 
 // inner pages
 .innerTitleSection {
-  background-color: #272e3a;
+  background-color: rgba($color: #000000, $alpha: 0.02);
   padding: 30px 0;
 
   .container {
@@ -511,8 +511,9 @@ ul {
   }
 
   img {
-    height: 32px;
-    margin-right: 15px;
+    height: 40px;
+    max-width: max-content;
+    
   }
 }
 
@@ -520,14 +521,15 @@ ul {
   margin-left: 20px;
 
   h1 {
-    color: $white;
+    color: $black;
     font-size: 24px;
     font-weight: 600;
   }
 
   p {
-    color: $grey;
+    color: rgba($color: #000000, $alpha: 0.8);
     margin-bottom: 5px !important;
+    line-height: 1.7;
   }
 }
 
@@ -739,8 +741,10 @@ footer {
     flex: 1;
 
     .platform {
-      font-size: 12px;
-      color: $grey;
+      h2{
+        font-size: 12px;
+        color: $grey;
+      }
     }
 
     p {
