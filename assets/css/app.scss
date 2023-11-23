@@ -291,7 +291,7 @@ ul {
     list-style: none;
 
     li {
-      flex: 1 1 19%;
+      flex: 1 0 19%;
       background-color: $white;
       padding: 15px 10px;
       border-radius: $radius;
@@ -314,7 +314,7 @@ ul {
       img {
         height: 50px;
         object-fit: contain;
-        margin: 20px auto;
+        margin: 40px auto 20px;
         display: block;
         // aspect-ratio: 1/1;
       }
